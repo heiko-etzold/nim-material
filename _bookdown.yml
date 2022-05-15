@@ -1,0 +1,6 @@
+book_filename: 'Nim-Handreichung'
+view: "https://github.com/heiko-etzold/nim-material/blob/de.1.0/%s"
+output_dir: "docs/de/1.0"
+language:
+  label:
+    fig: 'Abb. '

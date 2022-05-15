@@ -1,0 +1,94 @@
+# Technischer Hintergrund zur App 
+
+
+## Quellcode
+
+Der Quellcode zur App steht unter einer offenen Lizenz unter https://github.com/heiko-etzold/nim-app zur Verfügung.
+
+Da die App derzeit nur für iPadOS und macOS entwickelt wurde, bietet sich über den freien Quelltext die Möglichkeit, auch Versionen für andere Plattformen zu realisieren. 
+Solle diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnahme über die entsprechende GitHub-Seite.
+
+## Übersetzungen {#uebersetzungen}
+
+Um die App in möglichst vielen Sprachen anbieten zu können (vgl. Abschnitt \@ref(globale-einstellungen)), freuen wir uns über Ihre Mitarbeit bei der Übersetzung. 
+Hierzu findet sich unter ***LINK*** eine (englischsprachige) Anleitung, wie die entsprechenden Texte für eine neue Sprache erzeugt werden können. 
+
+## Datenschutz und Archiv-Dateien
+
+Die App speichert alle Informationen lokal auf dem iPad/Mac und besitzt keine Verbindung zum Internet. 
+Dieser Abschnitt beschreibt, welche Daten des Archivs in welcher Form auf dem iPad/Mac gespeichert und ggf. beim Speichern/Teilen des Archivs (siehe Abschnitt \@ref(archivieren-und-untersuchen)) weitergegeben werden. 
+Werden im Einstellungsbildschirm der App keine Namen eingegeben bzw. wird in den globalen Einstellungen die Anonymisierung der Namen aktiviert, werden keinerlei personenbezogene Daten von der App gespeichert bzw. beim Speichern/Teilen des Archivs weitergegeben.
+
+Das Nim-Archiv wird als `JSON`-Datei^[siehe auch https://de.wikipedia.org/wiki/JavaScript_Object_Notation] mit der Endung `.nim` gespeichert und kann mit einem einfachen Texteditor betrachtet (und auf Wunsch auch bearbeitet) werden. 
+Im Folgenden ist der exemplarische Aufbau einer solchen Datei mit zwei Spielverläufen dargestellt: 
+
+```{#NimArchiv .json .numberLines}
+[
+  {
+    "leftPlayerName" : "Maxi",
+    "rightPlayerName" : "Kim",
+    "leftPlayerColor" : "red",
+    "rightPlayerColor" : "blue",
+    "winMode" : "lastWins",
+    "numberOfMaximalCircles" : 4,
+    "listOfColors" : [
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "blue",
+      "blue",
+      "red"
+    ],
+    "gameNumber" : 1
+  },
+  {
+    "leftPlayerName" : "",
+    "rightPlayerName" : "Flo",
+    "leftPlayerColor" : "orange",
+    "rightPlayerColor" : "green",
+    "winMode" : "lastLoses",
+    "numberOfMaximalCircles" : 2,
+    "listOfColors" : [
+      "green",
+      "green",
+      "orange",
+      "green",
+      "orange"
+    ],
+    "gameNumber" : 2
+  }
+]
+```
+
+* Die Zeilen `1` und `36` rahmen die Liste an Spielverläufen ein.
+
+* Die Zeilen `2` und `19` rahmen das erste Spiel ein. 
+Nach jedem Spiel (außer dem letzten) kommt ein Komma (siehe Zeile `19`).
+
+* Unter `leftPlayerName` und `rightPlayername` (Zeilen `3` und `4`) werden die Namen der Spieler/-innen abgespeichert. Wird kein Name gespeichert (dies entspricht dem Wert `""`, siehe Zeile `21`), so wird beim Erkunden des Spiels *Links* oder *Rechts* als Name dargestellt. 
+In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim Export nicht gespeichert werden (siehe Abschnitt ***???***). 
+
+* Unter `leftPlayerColor` und `rightPlayerColor` (Zeilen `5` und `6`) werden die Spielfarben der Spieler/-innen abgespeichert. Folgende Werte sind möglich:
+  - `red`: rot 
+  - `blue`: blau
+  - `yellow`: gelb
+  - `green`: grün
+  - `orange`: orange
+  - `purple`: violett
+  
+  Wird ein anderer Wert eingetragen, erfolgt beim Öffnen der Datei mit der Nim-App eine Fehlermeldung.
+* Unter `winMode` (Zeile `7`) wird der Gewinnmodus abgespeichert. Folgende Werte sind möglich:
+  - `lastWins`: letztes Feld gewinnt
+  - `lastLoses`: letztes Feld verliert
+  
+  Wird ein anderer Wert eingetragen, erfolgt beim Öffnen der Datei mit der Nim-App eine Fehlermeldung.
+
+
+* Unter `numberOfMaximalCircles` (Zeile `8`) wird die maximale Anzahl an gleichfarbigen Plättchen gespeichert, die hintereinander gelegt werden dürfen. Der Wert muss `1`, `2`, `3`oder `4` betragen, ansonsten erfolgt beim Öffnen der Datei mit der Nim-App eine Fehlermeldung.
+
+
+* Unter `listOfColors` (Zeilen `9`bis `17` wird die Liste der Farben abgespeichert, die die im Spiel gelegten Plättchen haben. Die Anzahl der Farben entspricht dann der Spielfeldlänge. Auch hier führen fehlerhaft angegebene Farben zu einer Fehlermeldung beim Öffnen der Datei mit der Nim-App.
+
+* Unter `gameNumber` wird eine Nummer abgespeichert, um die Reihenfolge der Spiele nachvollziehen zu können. Bei jedem neuen Spiel, das in das Archiv gelegt wird, wird eine höhere Nummer als bei den vorherigen Spielen gewählt. Dies ist notwendig, um die Spiele im Archiv chronologisch ordnen zu können (siehe Abschnit \@ref(archivieren-und-analysieren)). 
+

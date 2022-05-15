@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="de-DE" xml:lang="de-DE">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A Hintergründe zum Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</title>
+  <meta name="description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A Hintergründe zum Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://heiko-etzold.github.io/nim-material/de/1.0" />
+  
+  <meta property="og:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="github-repo" content="heiko-etzold/nim-material/tree/de.1.0" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Hintergründe zum Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  
+  <meta name="twitter:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  
+
+<meta name="author" content="Heiko Etzold, Günter Krauthausen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="die-nim-app.html"/>
+<link rel="next" href="technischer-hintergrund-zur-app.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="own.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html"><b>Nim-Handreichung</b></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Einleitung</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#über-diese-handreichung"><i class="fa fa-check"></i>Über diese Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lizenz-und-versionen-dieser-handreichung"><i class="fa fa-check"></i>Lizenz und Versionen dieser Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dankeschön"><i class="fa fa-check"></i>Dankeschön</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html"><i class="fa fa-check"></i><b>1</b> Das Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#spielregeln"><i class="fa fa-check"></i><b>1.1</b> Spielregeln</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#klassische-spielregeln"><i class="fa fa-check"></i><b>1.1.1</b> Klassische Spielregeln</a></li>
+<li class="chapter" data-level="1.1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#hinweise"><i class="fa fa-check"></i><b>1.1.2</b> Hinweise</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#typische-phasen-im-spielverlauf"><i class="fa fa-check"></i><b>1.2</b> Typische Phasen im Spielverlauf</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#freies-spielen"><i class="fa fa-check"></i><b>1.2.1</b> Freies Spielen</a></li>
+<li class="chapter" data-level="1.2.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#erste-vermutungen"><i class="fa fa-check"></i><b>1.2.2</b> Erste Vermutungen</a></li>
+<li class="chapter" data-level="1.2.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gezieltere-analyse"><i class="fa fa-check"></i><b>1.2.3</b> Gezieltere Analyse</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gewinnstrategie"><i class="fa fa-check"></i><b>1.3</b> Gewinnstrategie</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#ausgangsparameter"><i class="fa fa-check"></i><b>1.3.1</b> Ausgangsparameter</a></li>
+<li class="chapter" data-level="1.3.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-feldlaenge"><i class="fa fa-check"></i><b>1.3.2</b> Variation der Feldlänge</a></li>
+<li class="chapter" data-level="1.3.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variationen-status-letztes-feld"><i class="fa fa-check"></i><b>1.3.3</b> Variationen Status letztes Feld</a></li>
+<li class="chapter" data-level="1.3.4" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-legezahl"><i class="fa fa-check"></i><b>1.3.4</b> Variation der Legezahl</a></li>
+<li class="chapter" data-level="1.3.5" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#sehr-große-feldlängen-und-legezahlen"><i class="fa fa-check"></i><b>1.3.5</b> Sehr große Feldlängen und Legezahlen</a></li>
+<li class="chapter" data-level="1.3.6" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#allgemeine-gewinnstrategie"><i class="fa fa-check"></i><b>1.3.6</b> Allgemeine Gewinnstrategie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html"><i class="fa fa-check"></i><b>2</b> Didaktische Empfehlungen</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#material-einführung"><i class="fa fa-check"></i><b>2.1</b> Material &amp; Einführung</a></li>
+<li class="chapter" data-level="2.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#behutsame-fokussierung"><i class="fa fa-check"></i><b>2.2</b> Behutsame Fokussierung</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-a"><i class="fa fa-check"></i>Variante A</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-b"><i class="fa fa-check"></i>Variante B</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#risiko"><i class="fa fa-check"></i><b>2.3</b> Risiko …!</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#herausfordern"><i class="fa fa-check"></i>Herausfordern</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#motivieren"><i class="fa fa-check"></i>Motivieren</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#souverän-bleiben"><i class="fa fa-check"></i>»Souverän« bleiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#vorschnell-vermeintlich-am-ziel"><i class="fa fa-check"></i><b>2.4</b> Vorschnell vermeintlich am Ziel</a></li>
+<li class="chapter" data-level="2.5" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-dokumentation"><i class="fa fa-check"></i><b>2.5</b> Rolle der Dokumentation</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#überblick-behalten"><i class="fa fa-check"></i><b>2.5.1</b> Überblick behalten</a></li>
+<li class="chapter" data-level="2.5.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#hypothesen-prüfung"><i class="fa fa-check"></i><b>2.5.2</b> Hypothesen-Prüfung</a></li>
+<li class="chapter" data-level="2.5.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen"><i class="fa fa-check"></i><b>2.5.3</b> Pool an Spielverläufen</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-sprache"><i class="fa fa-check"></i><b>2.6</b> Rolle der Sprache</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="die-nim-app.html"><a href="die-nim-app.html"><i class="fa fa-check"></i><b>3</b> Die Nim-App</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#einstellungen-innerhalb-der-app"><i class="fa fa-check"></i><b>3.1</b> Einstellungen innerhalb der App</a></li>
+<li class="chapter" data-level="3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#spielen"><i class="fa fa-check"></i><b>3.2</b> Spielen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="die-nim-app.html"><a href="die-nim-app.html#notizen-machen"><i class="fa fa-check"></i><b>3.2.1</b> Notizen machen</a></li>
+<li class="chapter" data-level="3.2.2" data-path="die-nim-app.html"><a href="die-nim-app.html#doppelt-spielen"><i class="fa fa-check"></i><b>3.2.2</b> Doppelt spielen</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#archivieren-und-untersuchen"><i class="fa fa-check"></i><b>3.3</b> Archivieren und Untersuchen</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#sinnvolles-sortieren"><i class="fa fa-check"></i><b>3.3.1</b> Sinnvolles Sortieren</a></li>
+<li class="chapter" data-level="3.3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#archive-aus-klasse-sammeln"><i class="fa fa-check"></i><b>3.3.2</b> Archive aus Klasse sammeln</a></li>
+<li class="chapter" data-level="3.3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#spiele-zum-analysieren-vorgeben"><i class="fa fa-check"></i><b>3.3.3</b> Spiele zum Analysieren vorgeben</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="die-nim-app.html"><a href="die-nim-app.html#globale-einstellungen"><i class="fa fa-check"></i><b>3.4</b> Globale Einstellungen</a></li>
+<li class="chapter" data-level="3.5" data-path="die-nim-app.html"><a href="die-nim-app.html#bedienungshilfen"><i class="fa fa-check"></i><b>3.5</b> Bedienungshilfen</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="die-nim-app.html"><a href="die-nim-app.html#farben-und-kontraste"><i class="fa fa-check"></i><b>3.5.1</b> Farben und Kontraste</a></li>
+<li class="chapter" data-level="3.5.2" data-path="die-nim-app.html"><a href="die-nim-app.html#schriftgröße"><i class="fa fa-check"></i><b>3.5.2</b> Schriftgröße</a></li>
+<li class="chapter" data-level="3.5.3" data-path="die-nim-app.html"><a href="die-nim-app.html#texte-vorlesen"><i class="fa fa-check"></i><b>3.5.3</b> Texte vorlesen</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Anhang</b></span></li>
+<li class="chapter" data-level="A" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html"><i class="fa fa-check"></i><b>A</b> Hintergründe zum Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#das-strategiespiel-nim"><i class="fa fa-check"></i><b>A.1</b> Das Strategiespiel Nim</a></li>
+<li class="chapter" data-level="A.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#spielregeln-des-nim-spiel"><i class="fa fa-check"></i><b>A.2</b> Spielregeln des Nim-Spiel</a></li>
+<li class="chapter" data-level="A.3" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#woher-stammt-das-nim-spiel"><i class="fa fa-check"></i><b>A.3</b> Woher stammt das Nim-Spiel?</a></li>
+<li class="chapter" data-level="A.4" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#die-erste-nim-app"><i class="fa fa-check"></i><b>A.4</b> Die erste Nim-»App«</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#der-nimrod"><i class="fa fa-check"></i><b>A.4.1</b> Der Nimrod</a></li>
+<li class="chapter" data-level="A.4.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#aufbau-und-funktionsweise"><i class="fa fa-check"></i><b>A.4.2</b> Aufbau und Funktionsweise</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html"><i class="fa fa-check"></i><b>B</b> Technischer Hintergrund zur App</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#quellcode"><i class="fa fa-check"></i><b>B.1</b> Quellcode</a></li>
+<li class="chapter" data-level="B.2" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#uebersetzungen"><i class="fa fa-check"></i><b>B.2</b> Übersetzungen</a></li>
+<li class="chapter" data-level="B.3" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#datenschutz-und-archiv-dateien"><i class="fa fa-check"></i><b>B.3</b> Datenschutz und Archiv-Dateien</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>C</b> Literatur</a></li>
+<li class="divider"></li>
+<li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="pictures/by-sa.png" height="20px"/></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hintergründe-zum-nim-spiel" class="section level1" number="4">
+<h1><span class="header-section-number">A</span> Hintergründe zum Nim-Spiel</h1>
+<div id="das-strategiespiel-nim" class="section level2" number="4.1">
+<h2><span class="header-section-number">A.1</span> Das Strategiespiel Nim</h2>
+<p>Ein mathematisches Strategiespiel wie Nim ist ein Spiel, dessen Regeln, Strategien und Ergebnisse durch klare mathematische Parameter definiert werden <span class="citation">(vgl. <a href="literatur.html#ref-mathematisches-spiel" role="doc-biblioref"><em>Mathematisches Spiel</em>, 2021</a>)</span>.
+Oft haben solche Spiele einfache Regeln (z. B. Tic-Tac-Toe). Dennoch können sie tiefere mathematische Grundlagen haben.
+Obwohl also die Spielregeln des Nim-Spiels sehr einfach sind, kann das Spiel mithilfe der kombinatorischen Spieltheorie mathematisch tiefgreifend analysiert werden <span class="citation">(vgl. <a href="literatur.html#ref-nim" role="doc-biblioref">Wikibrief, 2021</a>)</span>.
+Diese Hintergründe muss man beim Spielen aber nicht durchschauen. Das unterscheidet die mathematischen Spiele von mathematischen Rätseln, bei denen man für eine Lösung spezielle mathematische Kenntnisse mitbringen muss.</p>
+<p>Der fachliche Kern mathematischer Spiele ist zwar für Spieler, die die enthaltenen mathematischen Aspekte (noch) nicht kennen, nicht ohne Weiteres ersichtlich – zumindest solange nicht, bis ein entsprechender Erfahrungshintergrund mit dem Spiel aufgebaut und den innewohnenden Strukturen bewusst Beachtung geschenkt wird.
+Diese Rahmenbedingungen lassen sich aber herstellen: Der Erfahrungsaufbau geschieht durch mehrfache eigene Spieldurchgänge sowie eigenes oder durch Unterricht angeregtes Erkenntnisinteresse, das gezielt nach den Funktionsweisen oder »Geheimnissen« des Spiels fragt.</p>
+<p>Um generell ein solches Spiel und so auch das Nim-Spiel mathematisch zu analysieren, ist es besonders nützlich, die Spielregeln zu studieren, aus denen sich (für mathematisch vorgebildete Erwachsene) ggf. Gleichungen oder relevante Formalisierungen ergeben können.
+Im Grundschulalter (oder auch bei Erwachsenen, denen diese formalen Vorgehensweisen nicht (mehr) zur Verfügung stehen) lässt sich der fachliche Hintergrund – z. B. eine existierende Gewinnstrategie – aber auch über die Erkundung anschaulicher Phänomene (Muster und Strukturen) experimentell aufklären und auch informell, gleichwohl allgemeingültig begründen.</p>
+<p>Mathematische Spiele wie z.B. Nim, Tic-Tac-Toe oder Sudoku sind sowohl in der Freizeitmathematik zu finden, als auch für den Mathematikunterricht von Interesse.</p>
+</div>
+<div id="spielregeln-des-nim-spiel" class="section level2" number="4.2">
+<h2><span class="header-section-number">A.2</span> Spielregeln des Nim-Spiel</h2>
+<p>Beim <em>traditionellen</em> Nim-Spiel entfernen zwei Spieler abwechselnd Objekte (z. B. Streichhölzer), die in Haufen, Stapeln oder Reihen angeordnet sind <span class="citation">(vgl. <a href="literatur.html#ref-nim" role="doc-biblioref">Wikibrief, 2021</a>)</span>.
+Dabei muss ein Spieler mindestens einen Gegenstand entfernen und kann beliebig viele Gegenstände entfernen, vorausgesetzt, sie stammen alle vom gleichen Haufen oder Stapel.
+Je nach gespielter Version besteht das Ziel des Spiels darin, entweder den letzten Gegenstand zu vermeiden (Misere-Variante) oder den letzten Gegenstand zu nehmen (»normale« Gewinn-Variante).</p>
+<p><span class="citation"><a href="literatur.html#ref-Mueller1984" role="doc-biblioref">Müller &amp; Wittmann</a> (<a href="literatur.html#ref-Mueller1984" role="doc-biblioref">1984, S. 72–75</a>)</span> schlagen folgende, bereits für Kinder im Grundschulalter geeignete <em>elementare</em> Variante des Nim-Spiels vor, die auch der vorliegenden App zugrunde liegt:
+Auf einer durchnummerierten Felderreihe (der Länge <span class="math inline">\(F\)</span>) werden von zwei Spielern abwechselnd 1 oder 2 Plättchen ihrer vorher zugewiesenen Farbe sukzessive auf die Felder gelegt.
+Wer das letzte Feld belegen kann, hat gewonnen. Gesucht wird die Gewinnstrategie, also ein Vorgehen, welches garantiert, dass man zu jedem Zeitpunkt des Spielverlaufs das Spiel kontrollieren kann und mit Sicherheit gewinnt.
+In der Neubearbeitung des Handbuchs produktiver Rechenübungen firmiert das Spiel unter dem Namen »Rot gegen Blau« <span class="citation">(<a href="literatur.html#ref-Wittmann2017" role="doc-biblioref">E. Ch. Wittmann &amp; Müller, 2017, S. 42 f.</a>)</span>.</p>
+<p>Die Parameter Feldlänge, erlaubte maximale Legezahl und der Status des letzte Feldes (gewonnen/verloren) können – einzeln oder in Kombinationen – variiert werden.
+Dadurch können Vermutungen über die Gewinnstrategie überprüft, begründet und zunehmend verallgemeinert werden.</p>
+</div>
+<div id="woher-stammt-das-nim-spiel" class="section level2" number="4.3">
+<h2><span class="header-section-number">A.3</span> Woher stammt das Nim-Spiel?</h2>
+<p>Der Ursprung des Nim-Spiels ist nicht zweifelsfrei geklärt, wird aber in China angenommen, da es sehr dem chinesischen Spiel <em>Steine sammeln</em> ähnelt.
+Varianten des Nim-Spiels sind bereits in der Antike nachgewiesen und die frühesten europäischen Hinweise auf Nim stammen vom Anfang des 16. Jahrhunderts <span class="citation">(vgl. <a href="literatur.html#ref-nim" role="doc-biblioref">Wikibrief, 2021</a>)</span>.</p>
+<p>Auch der Ursprung der Namensgebung ist offenbar nicht abschließend aufgeklärt.
+Sein heutiger Name soll auf den amerikanischen Mathematiker Charles L. Bouton von der Harvard University zurückgehen, der bereits 1901 die vollständige Theorie des Nim-Spiels entwickelt hat <span class="citation">(<a href="literatur.html#ref-nim" role="doc-biblioref">Wikibrief, 2021</a>)</span>.</p>
+<p>Eine erste elektro-mechanische Version des Nim-Spiels wurde anlässlich der Weltausstellung 1940 in New York vorgestellt <span class="citation">(vgl. <a href="literatur.html#ref-nim" role="doc-biblioref">Wikibrief, 2021</a>)</span>.
+Die Firma <em>Westinghouse Electric Corporation</em> zeigte eine Maschine, genannt <em>Nimatron</em>, die Nim spielte.
+Es gelang nur wenigen Menschen, die Maschine in diesem Computerspiel zu schlagen. Zehn Jahre später sollte ein Computer namens <em>Nimrod</em> in London für Furore sorgen:</p>
+<p>Als geistiger Vater des <em>Nimrod</em> gilt der Australier John Makepeace Bennett. Sein Arbeitgeber Ferranti suchte 1950 verzweifelt nach einem geeigneten Exponat für das im Jahr 1951 geplante Festival of Britain. Sein Vorschlag:
+Einen Rechner zu konstruieren, gegen den die Besucher der Messe eine Partie Nim spielen konnten <span class="citation">(<a href="literatur.html#ref-nimrod" role="doc-biblioref">GameGuideWiki, 2022</a>)</span>.</p>
+</div>
+<div id="die-erste-nim-app" class="section level2" number="4.4">
+<h2><span class="header-section-number">A.4</span> Die erste Nim-»App«</h2>
+<div id="der-nimrod" class="section level3" number="4.4.1">
+<h3><span class="header-section-number">A.4.1</span> Der Nimrod</h3>
+<p>Der <em>Nimrod</em> war im Prinzip der erste reine Spielcomputer, weil er nichts anderes konnte als Nim-Partien zu simulieren.
+Eigentlicher Sinn und Zweck seiner Entwicklung war es, der Öffentlichkeit zu demonstrieren, welch komplexe mathematische Entscheidungen Computer zu treffen in der Lage waren.</p>
+<blockquote>
+<p>»Am 1. Dezember 1950, mit nicht einmal mehr einem halben Jahr Vorlaufzeit, begann Ingenieur Raymond Stuart-Williams mit der Konstruktion des Computers nach Bennetts Entwürfen. Er schaffte es gerade noch rechtzeitig, den Nimrod fertigzustellen, sodass der riesige Rechner zur Festivaleröffnung am 5. Mai 1951 der Öffentlichkeit vorgestellt werden konnte. Der Nimrod mutierte schnell zum heimlichen Star des Festivals. Allerdings interessierten sich die Schlangen an Besuchern weniger für die Mathematik hinter dem System – wie es im Sinne von Erfinder Bennett gewesen wäre – sie kamen eher, um sich mit dem Computer in einer Partie Nim zu messen. Da man ihn aber nur schlagen konnte, wenn man mit der richtigen Strategie arbeitete, verlor er äußerst selten gegen seine menschlichen Kontrahenten« <span class="citation">(<a href="literatur.html#ref-nimrod" role="doc-biblioref">GameGuideWiki, 2022</a>)</span>.</p>
+</blockquote>
+<p>Nach dem Festival of Britain stand der <em>Nimrod</em> drei Wochen lang auf der Industriemesse in Berlin, wo er großes Aufsehen erregte und von der Polizei bewacht werden musste.
+Auch der damalige Bundeswirtschaftsminister Ludwig Erhard wagte ein paar Spiele, verlor aber jedes Mal.
+Bundeskanzler Konrad Adenauer war ebenfalls anwesend, spielte aber nicht, da ein ein direkter Vergleich zwischen Staatschef und Computer zur damaligen Zeit nicht opportun war.</p>
+<p>Die Herstellerfirma hat den <em>Nimrod</em> später wieder demontiert. Ein kleinerer Nachbau des Originalcomputers findet sich im Computerspielemuseum Berlin, eine Simulation findet sich unter <span class="citation"><a href="literatur.html#ref-nimrod-sim" role="doc-biblioref">Gaming</a> (<a href="literatur.html#ref-nimrod-sim" role="doc-biblioref">2010</a>)</span>.
+Der <em>Nimrod</em> war sicher der erste Spielcomputer der Welt. Kontrovers diskutiert wird hingegen die Frage ob Nim auch als erstes Computerspiel gelten werden kann <span class="citation">(<a href="literatur.html#ref-nimrod" role="doc-biblioref">GameGuideWiki, 2022</a>)</span>.</p>
+</div>
+<div id="aufbau-und-funktionsweise" class="section level3" number="4.4.2">
+<h3><span class="header-section-number">A.4.2</span> Aufbau und Funktionsweise</h3>
+<p>Zwischen Aufbau und Funktionsweise des <em>Nimrod</em> und der vorliegenden Nim-App zeigen sich interessante Parallelen, weshalb das Vorgehen des Nimrod hier kurz beschrieben werden soll <span class="citation">(vgl. <a href="literatur.html#ref-nimrod" role="doc-biblioref">GameGuideWiki, 2022</a>; <a href="literatur.html#ref-nimrod-sim" role="doc-biblioref">Gaming, 2010</a>)</span>:
+Der Spieler musste vor einem Kontrollfeld Platz nehmen, über welches das Spiel gesteuert wurde.</p>
+<ul>
+<li><p>Zu Beginn galt es, diverse Einstellungen vorzunehmen: Wer soll beginnen (Computer oder Spieler)? Wie umfangreich sollen die Berechnungen des Systems dargestellt werden?</p></li>
+<li><p>Es gab einen Demomodus, in dem der Computer eine Partie gegen sich selbst spielte, und zwei Spielvarianten: die normale und eine umgekehrte Variante, bei der derjenige <em>verliert</em>, der das letzte Streichholz nimmt.</p></li>
+<li><p>Auf dem Kontrollpult gab es einen Knopf <em>Comp. Move</em>, mit dem der Rechner darüber informiert wurde, dass er am Zuge ist.</p></li>
+<li><p>War der Spieler an der Reihe, konnte er über vier Reihen mit farbigen Knöpfen, die den Glühbirnen am Gerät entsprachen, festlegen, wie viele Streichhölzer er aus welcher Reihe entfernen wollte. Es wurden dabei immer alle Streichhölzer rechts vom gedrückten Knopf entfernt und die entsprechenden Leuchten erloschen.</p></li>
+<li><p>Um dem Computer mitzuteilen, dass <em>er</em> nun an der Reihe war, musste ein Extraknopf betätigt werden.</p></li>
+<li><p>Neben den Glühbirnen wurden im langsamen Demonstrationsmodus noch alle Befehle und Berechnungen angezeigt, die gerade von <em>Nimrod</em> abgearbeitet wurden.</p></li>
+<li><p>Zusätzlich wurden auf einem weiteren Display der Speicherinhalt und die gewählten und geprüften Kombinationen dargestellt. Offensichtlich wurde diesen zusätzlichen Darstellungen aber von den spielenden Besuchern kaum Beachtung geschenkt (vgl. dazu die Abschnitte <a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen">2.5.3</a> und <a href="die-nim-app.html#archivieren-und-untersuchen">3.3</a> zur Rolle der Dokumentation und ihrer Umsetzung in der Nim-App) .</p></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="die-nim-app.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="technischer-hintergrund-zur-app.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/heiko-etzold/nim-material/blob/de.1.0/A-Hintergruende-zum-Nim-Spiel.Rmd",
+"text": null
+},
+"download": ["Nim-Handreichung.pdf"],
+"toc": {
+"collapse": "subsection"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

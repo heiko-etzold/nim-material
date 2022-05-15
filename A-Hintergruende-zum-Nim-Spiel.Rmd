@@ -1,0 +1,85 @@
+# (APPENDIX) Anhang {-}
+
+# Hintergründe zum Nim-Spiel
+
+## Das Strategiespiel Nim
+
+Ein mathematisches Strategiespiel wie Nim ist ein Spiel, dessen Regeln, Strategien und Ergebnisse durch klare mathematische Parameter definiert werden [vgl. @mathematisches-spiel]. 
+Oft haben solche Spiele einfache Regeln (z. B. Tic-Tac-Toe). Dennoch können sie tiefere mathematische Grundlagen haben. 
+Obwohl also die Spielregeln des Nim-Spiels sehr einfach sind, kann das Spiel mithilfe der kombinatorischen Spieltheorie mathematisch tiefgreifend analysiert werden [vgl. @nim]. 
+Diese Hintergründe muss man beim Spielen aber nicht durchschauen. Das unterscheidet die mathematischen Spiele von mathematischen Rätseln, bei denen man für eine Lösung spezielle mathematische Kenntnisse mitbringen muss.
+
+Der fachliche Kern mathematischer Spiele ist zwar für Spieler, die die enthaltenen mathematischen Aspekte (noch) nicht kennen, nicht ohne Weiteres ersichtlich – zumindest solange nicht, bis ein entsprechender Erfahrungshintergrund mit dem Spiel aufgebaut und den innewohnenden Strukturen bewusst Beachtung geschenkt wird. 
+Diese Rahmenbedingungen lassen sich aber herstellen: Der Erfahrungsaufbau geschieht durch mehrfache eigene Spieldurchgänge sowie eigenes oder durch Unterricht angeregtes Erkenntnisinteresse, das gezielt nach den Funktionsweisen oder »Geheimnissen« des Spiels fragt.
+
+Um generell ein solches Spiel und so auch das Nim-Spiel mathematisch zu analysieren, ist es besonders nützlich, die Spielregeln zu studieren, aus denen sich (für mathematisch vorgebildete Erwachsene) ggf. Gleichungen oder relevante Formalisierungen ergeben können. 
+Im Grundschulalter (oder auch bei Erwachsenen, denen diese formalen Vorgehensweisen nicht (mehr) zur Verfügung stehen) lässt sich der fachliche Hintergrund – z. B. eine existierende Gewinnstrategie – aber auch über die Erkundung anschaulicher Phänomene (Muster und Strukturen) experimentell aufklären und auch informell, gleichwohl allgemeingültig begründen.
+
+Mathematische Spiele wie z.B. Nim, Tic-Tac-Toe oder Sudoku sind sowohl in der Freizeitmathematik zu finden, als auch für den Mathematikunterricht von Interesse.
+
+
+## Spielregeln des Nim-Spiel
+
+Beim *traditionellen* Nim-Spiel entfernen zwei Spieler abwechselnd Objekte (z. B. Streichhölzer), die in Haufen, Stapeln oder Reihen angeordnet sind [vgl. @nim]. 
+Dabei muss ein Spieler mindestens einen Gegenstand entfernen und kann beliebig viele Gegenstände entfernen, vorausgesetzt, sie stammen alle vom gleichen Haufen oder Stapel. 
+Je nach gespielter Version besteht das Ziel des Spiels darin, entweder den letzten Gegenstand zu vermeiden (Misere-Variante) oder den letzten Gegenstand zu nehmen (»normale« Gewinn-Variante).
+
+@Mueller1984 [{72 -- 75}] schlagen folgende, bereits für Kinder im Grundschulalter geeignete *elementare* Variante des Nim-Spiels vor, die auch der vorliegenden App zugrunde liegt: 
+Auf einer durchnummerierten Felderreihe (der Länge $F$) werden von zwei Spielern abwechselnd 1 oder 2 Plättchen ihrer vorher zugewiesenen Farbe sukzessive auf die Felder gelegt. 
+Wer das letzte Feld belegen kann, hat gewonnen. Gesucht wird die Gewinnstrategie, also ein Vorgehen, welches garantiert, dass man zu jedem Zeitpunkt des Spielverlaufs das Spiel kontrollieren kann und mit Sicherheit gewinnt. 
+In der Neubearbeitung des Handbuchs produktiver Rechenübungen firmiert das Spiel unter dem Namen »Rot gegen Blau« [@Wittmann2017, {42 f.}].
+
+Die Parameter Feldlänge, erlaubte maximale Legezahl und der Status des letzte Feldes (gewonnen/verloren) können – einzeln oder in Kombinationen – variiert werden. 
+Dadurch können Vermutungen über die Gewinnstrategie überprüft, begründet und zunehmend verallgemeinert werden.
+
+
+## Woher stammt das Nim-Spiel?
+
+Der Ursprung des Nim-Spiels ist nicht zweifelsfrei geklärt, wird aber in China angenommen, da es sehr dem chinesischen Spiel *Steine sammeln* ähnelt. 
+Varianten des Nim-Spiels sind bereits in der Antike nachgewiesen und die frühesten europäischen Hinweise auf Nim stammen vom Anfang des 16. Jahrhunderts [vgl. @nim].
+
+Auch der Ursprung der Namensgebung ist offenbar nicht abschließend aufgeklärt. 
+Sein heutiger Name soll auf den amerikanischen Mathematiker Charles L. Bouton von der Harvard University zurückgehen, der bereits 1901 die vollständige Theorie des Nim-Spiels entwickelt hat [@nim]. 
+
+Eine erste elektro-mechanische Version des Nim-Spiels wurde anlässlich der Weltausstellung 1940 in New York vorgestellt [vgl. @nim]. 
+Die Firma *Westinghouse Electric Corporation* zeigte eine Maschine, genannt *Nimatron*, die Nim spielte.
+Es gelang nur wenigen Menschen, die Maschine in diesem Computerspiel zu schlagen. Zehn Jahre später sollte ein Computer namens *Nimrod* in London für Furore sorgen:
+
+Als geistiger Vater des *Nimrod* gilt der Australier John Makepeace Bennett. Sein Arbeitgeber Ferranti suchte 1950 verzweifelt nach einem geeigneten Exponat für das im Jahr 1951 geplante Festival of Britain. Sein Vorschlag: 
+Einen Rechner zu konstruieren, gegen den die Besucher der Messe eine Partie Nim spielen konnten [@nimrod]. 
+
+## Die erste Nim-»App«
+
+### Der Nimrod
+
+Der *Nimrod* war im Prinzip der erste reine Spielcomputer, weil er nichts anderes konnte als Nim-Partien zu simulieren. 
+Eigentlicher Sinn und Zweck seiner Entwicklung war es, der Öffentlichkeit zu demonstrieren, welch komplexe mathematische Entscheidungen Computer zu treffen in der Lage waren.
+
+> »Am 1. Dezember 1950, mit nicht einmal mehr einem halben Jahr Vorlaufzeit, begann Ingenieur Raymond Stuart-Williams mit der Konstruktion des Computers nach Bennetts Entwürfen. Er schaffte es gerade noch rechtzeitig, den Nimrod fertigzustellen, sodass der riesige Rechner zur Festivaleröffnung am 5. Mai 1951 der Öffentlichkeit vorgestellt werden konnte. Der Nimrod mutierte schnell zum heimlichen Star des Festivals. Allerdings interessierten sich die Schlangen an Besuchern weniger für die Mathematik hinter dem System – wie es im Sinne von Erfinder Bennett gewesen wäre – sie kamen eher, um sich mit dem Computer in einer Partie Nim zu messen. Da man ihn aber nur schlagen konnte, wenn man mit der richtigen Strategie arbeitete, verlor er äußerst selten gegen seine menschlichen Kontrahenten« [@nimrod].
+
+Nach dem Festival of Britain stand der *Nimrod* drei Wochen lang auf der Industriemesse in Berlin, wo er großes Aufsehen erregte und von der Polizei bewacht werden musste. 
+Auch der damalige Bundeswirtschaftsminister Ludwig Erhard wagte ein paar Spiele, verlor aber jedes Mal. 
+Bundeskanzler Konrad Adenauer war ebenfalls anwesend, spielte aber nicht, da ein ein direkter Vergleich zwischen Staatschef und Computer zur damaligen Zeit nicht opportun war.
+
+Die Herstellerfirma hat den *Nimrod* später wieder demontiert. Ein kleinerer Nachbau des Originalcomputers findet sich im Computerspielemuseum Berlin, eine Simulation findet sich unter @nimrod-sim. 
+Der *Nimrod* war sicher der erste Spielcomputer der Welt. Kontrovers diskutiert wird hingegen die Frage ob Nim auch als erstes Computerspiel gelten werden kann [@nimrod].
+
+
+### Aufbau und Funktionsweise
+
+Zwischen Aufbau und Funktionsweise des *Nimrod* und der vorliegenden Nim-App zeigen sich interessante Parallelen, weshalb das Vorgehen des Nimrod hier kurz beschrieben werden soll [vgl. @nimrod; @nimrod-sim]: 
+Der Spieler musste vor einem Kontrollfeld Platz nehmen, über welches das Spiel gesteuert wurde.
+
+* Zu Beginn galt es, diverse Einstellungen vorzunehmen: Wer soll beginnen (Computer oder Spieler)? Wie umfangreich sollen die Berechnungen des Systems dargestellt werden?
+
+* Es gab einen Demomodus, in dem der Computer eine Partie gegen sich selbst spielte, und zwei Spielvarianten: die normale und eine umgekehrte Variante, bei der derjenige *verliert*, der das letzte Streichholz nimmt.
+
+* Auf dem Kontrollpult gab es einen Knopf *Comp. Move*, mit dem der Rechner darüber informiert wurde, dass er am Zuge ist.
+
+* War der Spieler an der Reihe, konnte er über vier Reihen mit farbigen Knöpfen, die den Glühbirnen am Gerät entsprachen, festlegen, wie viele Streichhölzer er aus welcher Reihe entfernen wollte. Es wurden dabei immer alle Streichhölzer rechts vom gedrückten Knopf entfernt und die entsprechenden Leuchten erloschen.
+
+* Um dem Computer mitzuteilen, dass *er* nun an der Reihe war, musste ein Extraknopf betätigt werden.
+
+* Neben den Glühbirnen wurden im langsamen Demonstrationsmodus noch alle Befehle und Berechnungen angezeigt, die gerade von *Nimrod* abgearbeitet wurden.
+
+* Zusätzlich wurden auf einem weiteren Display der Speicherinhalt und die gewählten und geprüften Kombinationen dargestellt. Offensichtlich wurde diesen zusätzlichen Darstellungen aber von den spielenden Besuchern kaum Beachtung geschenkt (vgl. dazu die Abschnitte \@ref(pool-an-spielverlaeufen) und \@ref(archivieren-und-untersuchen) zur Rolle der Dokumentation und ihrer Umsetzung in der Nim-App) .

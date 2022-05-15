@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="de-DE" xml:lang="de-DE">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Das Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</title>
+  <meta name="description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Das Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://heiko-etzold.github.io/nim-material/de/1.0" />
+  
+  <meta property="og:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="github-repo" content="heiko-etzold/nim-material/tree/de.1.0" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Das Nim-Spiel | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  
+  <meta name="twitter:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  
+
+<meta name="author" content="Heiko Etzold, Günter Krauthausen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="didaktische-empfehlungen.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="own.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html"><b>Nim-Handreichung</b></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Einleitung</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#über-diese-handreichung"><i class="fa fa-check"></i>Über diese Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lizenz-und-versionen-dieser-handreichung"><i class="fa fa-check"></i>Lizenz und Versionen dieser Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dankeschön"><i class="fa fa-check"></i>Dankeschön</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html"><i class="fa fa-check"></i><b>1</b> Das Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#spielregeln"><i class="fa fa-check"></i><b>1.1</b> Spielregeln</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#klassische-spielregeln"><i class="fa fa-check"></i><b>1.1.1</b> Klassische Spielregeln</a></li>
+<li class="chapter" data-level="1.1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#hinweise"><i class="fa fa-check"></i><b>1.1.2</b> Hinweise</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#typische-phasen-im-spielverlauf"><i class="fa fa-check"></i><b>1.2</b> Typische Phasen im Spielverlauf</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#freies-spielen"><i class="fa fa-check"></i><b>1.2.1</b> Freies Spielen</a></li>
+<li class="chapter" data-level="1.2.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#erste-vermutungen"><i class="fa fa-check"></i><b>1.2.2</b> Erste Vermutungen</a></li>
+<li class="chapter" data-level="1.2.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gezieltere-analyse"><i class="fa fa-check"></i><b>1.2.3</b> Gezieltere Analyse</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gewinnstrategie"><i class="fa fa-check"></i><b>1.3</b> Gewinnstrategie</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#ausgangsparameter"><i class="fa fa-check"></i><b>1.3.1</b> Ausgangsparameter</a></li>
+<li class="chapter" data-level="1.3.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-feldlaenge"><i class="fa fa-check"></i><b>1.3.2</b> Variation der Feldlänge</a></li>
+<li class="chapter" data-level="1.3.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variationen-status-letztes-feld"><i class="fa fa-check"></i><b>1.3.3</b> Variationen Status letztes Feld</a></li>
+<li class="chapter" data-level="1.3.4" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-legezahl"><i class="fa fa-check"></i><b>1.3.4</b> Variation der Legezahl</a></li>
+<li class="chapter" data-level="1.3.5" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#sehr-große-feldlängen-und-legezahlen"><i class="fa fa-check"></i><b>1.3.5</b> Sehr große Feldlängen und Legezahlen</a></li>
+<li class="chapter" data-level="1.3.6" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#allgemeine-gewinnstrategie"><i class="fa fa-check"></i><b>1.3.6</b> Allgemeine Gewinnstrategie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html"><i class="fa fa-check"></i><b>2</b> Didaktische Empfehlungen</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#material-einführung"><i class="fa fa-check"></i><b>2.1</b> Material &amp; Einführung</a></li>
+<li class="chapter" data-level="2.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#behutsame-fokussierung"><i class="fa fa-check"></i><b>2.2</b> Behutsame Fokussierung</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-a"><i class="fa fa-check"></i>Variante A</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-b"><i class="fa fa-check"></i>Variante B</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#risiko"><i class="fa fa-check"></i><b>2.3</b> Risiko …!</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#herausfordern"><i class="fa fa-check"></i>Herausfordern</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#motivieren"><i class="fa fa-check"></i>Motivieren</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#souverän-bleiben"><i class="fa fa-check"></i>»Souverän« bleiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#vorschnell-vermeintlich-am-ziel"><i class="fa fa-check"></i><b>2.4</b> Vorschnell vermeintlich am Ziel</a></li>
+<li class="chapter" data-level="2.5" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-dokumentation"><i class="fa fa-check"></i><b>2.5</b> Rolle der Dokumentation</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#überblick-behalten"><i class="fa fa-check"></i><b>2.5.1</b> Überblick behalten</a></li>
+<li class="chapter" data-level="2.5.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#hypothesen-prüfung"><i class="fa fa-check"></i><b>2.5.2</b> Hypothesen-Prüfung</a></li>
+<li class="chapter" data-level="2.5.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen"><i class="fa fa-check"></i><b>2.5.3</b> Pool an Spielverläufen</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-sprache"><i class="fa fa-check"></i><b>2.6</b> Rolle der Sprache</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="die-nim-app.html"><a href="die-nim-app.html"><i class="fa fa-check"></i><b>3</b> Die Nim-App</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#einstellungen-innerhalb-der-app"><i class="fa fa-check"></i><b>3.1</b> Einstellungen innerhalb der App</a></li>
+<li class="chapter" data-level="3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#spielen"><i class="fa fa-check"></i><b>3.2</b> Spielen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="die-nim-app.html"><a href="die-nim-app.html#notizen-machen"><i class="fa fa-check"></i><b>3.2.1</b> Notizen machen</a></li>
+<li class="chapter" data-level="3.2.2" data-path="die-nim-app.html"><a href="die-nim-app.html#doppelt-spielen"><i class="fa fa-check"></i><b>3.2.2</b> Doppelt spielen</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#archivieren-und-untersuchen"><i class="fa fa-check"></i><b>3.3</b> Archivieren und Untersuchen</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#sinnvolles-sortieren"><i class="fa fa-check"></i><b>3.3.1</b> Sinnvolles Sortieren</a></li>
+<li class="chapter" data-level="3.3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#archive-aus-klasse-sammeln"><i class="fa fa-check"></i><b>3.3.2</b> Archive aus Klasse sammeln</a></li>
+<li class="chapter" data-level="3.3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#spiele-zum-analysieren-vorgeben"><i class="fa fa-check"></i><b>3.3.3</b> Spiele zum Analysieren vorgeben</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="die-nim-app.html"><a href="die-nim-app.html#globale-einstellungen"><i class="fa fa-check"></i><b>3.4</b> Globale Einstellungen</a></li>
+<li class="chapter" data-level="3.5" data-path="die-nim-app.html"><a href="die-nim-app.html#bedienungshilfen"><i class="fa fa-check"></i><b>3.5</b> Bedienungshilfen</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="die-nim-app.html"><a href="die-nim-app.html#farben-und-kontraste"><i class="fa fa-check"></i><b>3.5.1</b> Farben und Kontraste</a></li>
+<li class="chapter" data-level="3.5.2" data-path="die-nim-app.html"><a href="die-nim-app.html#schriftgröße"><i class="fa fa-check"></i><b>3.5.2</b> Schriftgröße</a></li>
+<li class="chapter" data-level="3.5.3" data-path="die-nim-app.html"><a href="die-nim-app.html#texte-vorlesen"><i class="fa fa-check"></i><b>3.5.3</b> Texte vorlesen</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Anhang</b></span></li>
+<li class="chapter" data-level="A" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html"><i class="fa fa-check"></i><b>A</b> Hintergründe zum Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#das-strategiespiel-nim"><i class="fa fa-check"></i><b>A.1</b> Das Strategiespiel Nim</a></li>
+<li class="chapter" data-level="A.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#spielregeln-des-nim-spiel"><i class="fa fa-check"></i><b>A.2</b> Spielregeln des Nim-Spiel</a></li>
+<li class="chapter" data-level="A.3" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#woher-stammt-das-nim-spiel"><i class="fa fa-check"></i><b>A.3</b> Woher stammt das Nim-Spiel?</a></li>
+<li class="chapter" data-level="A.4" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#die-erste-nim-app"><i class="fa fa-check"></i><b>A.4</b> Die erste Nim-»App«</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#der-nimrod"><i class="fa fa-check"></i><b>A.4.1</b> Der Nimrod</a></li>
+<li class="chapter" data-level="A.4.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#aufbau-und-funktionsweise"><i class="fa fa-check"></i><b>A.4.2</b> Aufbau und Funktionsweise</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html"><i class="fa fa-check"></i><b>B</b> Technischer Hintergrund zur App</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#quellcode"><i class="fa fa-check"></i><b>B.1</b> Quellcode</a></li>
+<li class="chapter" data-level="B.2" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#uebersetzungen"><i class="fa fa-check"></i><b>B.2</b> Übersetzungen</a></li>
+<li class="chapter" data-level="B.3" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#datenschutz-und-archiv-dateien"><i class="fa fa-check"></i><b>B.3</b> Datenschutz und Archiv-Dateien</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>C</b> Literatur</a></li>
+<li class="divider"></li>
+<li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="pictures/by-sa.png" height="20px"/></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="das-nim-spiel" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Das Nim-Spiel</h1>
+<div id="spielregeln" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Spielregeln</h2>
+<div id="klassische-spielregeln" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Klassische Spielregeln</h3>
+<p>Zwei Personen spielen gegeneinander.
+Abwechselnd legen sie (beginnend links bei Feld 1) Plättchen ihrer Farbe sukzessive auf den Spielplan.
+Man darf wahlweise jeweils ein oder zwei Plättchen auf die freien Plätze legen. Gewonnen hat, wer das letzte Feld belegt.</p>
+<div class="figure" style="text-align: center"><span id="fig:Spielfeld"></span>
+<img src="pictures/Spielplan.png" alt="Spielplan mit 10 Feldern " width="75%" />
+<p class="caption">
+Abb. 1.1: Spielplan mit 10 Feldern
+</p>
+</div>
+</div>
+<div id="hinweise" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Hinweise</h3>
+<ul>
+<li>Das Nim-Spiel wird also immer von zwei<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Personen gespielt.</li>
+<li>Die Spielregeln sind einfach und auch für <strong>jüngere Kinder</strong> unmittelbar zu verstehen.</li>
+<li>Der Pfiff: Dem Spiel liegt eine <strong>Gewinnstrategie</strong> zugrunde, d. h. dass man jedes Spiel zu <em>jedem</em> Zeitpunkt (!) des Spielverlaufs kontrollieren und damit auch <em>determinieren</em> kann, dass man sicher gewinnt – sofern man die Strategie kennt und ihr konsequent folgt.</li>
+<li>Ziel des Spiels ist es (zunächst), diese sichere Gewinnstrategie<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> zu erkunden, sowie erklären und begründen zu können.</li>
+</ul>
+<p>Im Abschnitt <a href="das-nim-spiel.html#gewinnstrategie">1.3</a> wird die Gewinnstrategie für den o. g. konkreten Fall und für diverse Regelvariationen bis hin zum allgemeinen Fall entwickelt und dargestellt.
+Es ist aber sehr zu empfehlen, sich zuvor <strong>ausdauernde Selbsterfahrungen</strong> mit diversen konkreten Spieldurchgängen zu gönnen.</p>
+<p>Versuchen Sie also zunächst, die Gewinnstrategie möglichst selbst herauszufinden – zumindest für den Fall der Feldlänge 10 und der Legeanzahl zwei Plättchen, denn:</p>
+<ul>
+<li>Selberfinden ist immer ergiebiger und bietet ein größeres <strong>Spielvergnügen</strong> als Vorgegebenes nur nachzuvollziehen (und dann manchmal nur irrtümlich zu glauben, man hätte das Prinzip verstanden).</li>
+<li>Ein eigener Erfahrungshintergrund – durchaus mit Aufs und Abs – ist sehr wertvoll, um als Beobachterin oder Beobachter die Spielverläufe anderer, z. B. Ihrer Schülerinnen und Schüler, einschätzen und ggf. sachgerechte <strong>Hilfen oder Impulse</strong> anbieten zu können.</li>
+</ul>
+<p>Beobachten Sie sich selbst<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> gezielt daraufhin, wie Sie sich in einzelnen Phasen verhalten:</p>
+<ul>
+<li>Wie gehen Sie selbst vor? Wie reagieren Sie auf die Lege-Aktionen der Spielpartnerin/des Spielpartners?</li>
+<li>Welche Vermutungen haben Sie im Hinblick auf eine Gewinnstrategie?</li>
+<li>Wie prüfen Sie deren Gültigkeit?</li>
+<li>Wann geht Ihre Geduld oder Ausdauer zu Ende? Woran liegt das Ihrer Meinung nach? Wie viele Spieldurchgänge haben Sie realisiert?</li>
+<li>Wie könnten Sie einen anderen Ansatz finden?</li>
+</ul>
+<p><strong>Alle diese Fragen sind nicht nur in diesem Rahmen Ihrer Selbsterfahrungen relevant und hilfreich, sondern in gleicher Weise für die Organisation der Lernprozesse rund um das Nim-Spiel im Unterricht.</strong></p>
+</div>
+</div>
+<div id="typische-phasen-im-spielverlauf" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Typische Phasen im Spielverlauf</h2>
+<div id="freies-spielen" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Freies Spielen</h3>
+<p>Zunächst werden – unbeschwert und noch wenig strategisch – <strong>mehrere Spieldurchgänge</strong> unternommen.
+Diese Phase ist nicht gering zu schätzen! Einerseits liefert sie den beschriebenen <strong>Erfahrungshintergrund</strong> für die folgende bewusstere Auseinandersetzung, und andererseits dient sie (v. a. bei jüngeren Kindern) der <strong>Festigung der Spielregeln</strong>.
+Insbesondere Kinder neigen in dieser Phase auch dazu, akribisch den Spielstand im Blick zu behalten (»Bei uns steht es 6:4!«), obwohl es um den eigentlich am wenigstens geht.</p>
+</div>
+<div id="erste-vermutungen" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Erste Vermutungen</h3>
+<p>Bald werden auch <strong>Ideen</strong> darüber geäußert, <strong>was wohl für das Gewinnen oder Verlieren verantwortlich sein könnte</strong>.
+Diese sind anfangs noch wenig argumentativ durchdrungen oder abgesichert; sie beruhen eher auf spontanen Assoziationen, evoziert durch situativ Erlebtes wie einen gerade gewonnenen Spieldurchgang. Amüsanter – für Erwachsene, denn für Kinder kann auch das eine ernst gemeinte, wenn auch »magische« Vermutung sein – wirkt die Bitte: »Jetzt möchte ich aber mal die blauen Plättchen haben!«</p>
+</div>
+<div id="gezieltere-analyse" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Gezieltere Analyse</h3>
+<p>Nach einer gewissen Zahl von Spieldurchgängen – und diese kann, je nach Ausdauer, eine beträchtliche Variation aufweisen! – wird dann eine Position (<strong>Gewinnposition</strong>) auf dem Spielplan augenfällig (erkennbar am Stutzen oder großen Augen), ab der man mit Gewissheit sagen kann, ob man verlieren oder gewinnen wird.
+Auf dem Spielplan bis 10 ist das die Position 7.
+Denn wie die Abb. <a href="das-nim-spiel.html#fig:Gewinnposition7">1.2</a> zeigt, gibt es ab dann nur noch zwei Optionen für den bereits feststehenden Sieger:
+Entweder sein Spielpartner legt ein rotes Plättchen, dann gewinnt Blau mit zwei gelegten Plättchen.
+Oder der Spielpartner legt zwei rote Plättchen, dann belegt Blau mit einem Plättchen die 10 und gewinnt.
+Die Abbildung ist auch eine praktikable Darstellungsweise für eine Begründung im Unterricht.</p>
+<div class="figure" style="text-align: center"><span id="fig:Gewinnposition7"></span>
+<img src="pictures/Gewinnposition7.png" alt="Gewinnposition 7" width="25%" />
+<p class="caption">
+Abb. 1.2: Gewinnposition 7
+</p>
+</div>
+<p>Auffällig ist an dieser Stelle – übrigens sowohl bei Erwachsenen als auch bei Grundschulkindern –, dass mancher sich hier bereits am Ziel wähnt, wenn die 7 als Gewinnposition identifiziert wurde.
+Man bedenke aber die Spielregeln, insbesondere Punkt 3 der eingangs genannten Hinweise:
+Nicht erst hier bei der 7 soll man wissen, dass/ob man gewinnen wird, sondern zu <em>jedem Zeitpunkt</em> des Spielverlaufs!
+Das meint im Prinzip: <strong>Gleich zu Spielbeginn</strong> und nicht erst vor der letzten Gewinnposition <strong>kann man sein Gewinnen abschätzen</strong>.
+Ansonsten würde dies ja (erst recht bei längeren Spielplänen) auch die Frage aufwerfen, ab wann man denn seine Aufmerksamkeit darauf fokussieren sollte, dass die erkannte Gewinnposition näher rückt und wie man sich dann verhalten sollte.</p>
+</div>
+</div>
+<div id="gewinnstrategie" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Gewinnstrategie</h2>
+<div id="ausgangsparameter" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Ausgangsparameter</h3>
+<blockquote>
+<p>Feldlänge 10 – Legezahl 2 – letztes Feld gewinnt</p>
+</blockquote>
+<p>Wie kann es nach der Identifikation der 7 als Gewinnposition weitergehen, wie bringt man sich also <em>garantiert</em> in die Lage, die 7 belegen zu können?</p>
+<p>Mit einem Blick auf Abb. <a href="das-nim-spiel.html#fig:Gewinnposition7">1.2</a> lässt sich erkennen, dass die Konstellation zwischen den Positionen 10 und 7 ganz entsprechend auch zwischen den Positionen 7 und 4 auftritt:
+Wer die 4 belegen kann, hat mit der gleichen Argumentation auch die Position 7 für sich gesichert.
+Und wie sichert man sich die Position 4? Über die wiederum gleiche Argumentation für die Positionen 4 und 1.
+Mit anderen Worten: Wer die 1 belegt, hat die 4 sicher, damit auch die 7 und schlussendlich auch die 10 und damit gewonnen (siehe Abb. <a href="das-nim-spiel.html#fig:Gewinnstrategie">1.3</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:Gewinnstrategie"></span>
+<img src="pictures/Gewinnstrategie.png" alt="Gewinnstrategie" width="75%" />
+<p class="caption">
+Abb. 1.3: Gewinnstrategie
+</p>
+</div>
+<p>Somit lässt sich als Zwischenergebnis festhalten:</p>
+<blockquote>
+<p>Um zu gewinnen, muss man selbst anfangen, und zwar mit dem Legen eines Plättchens. Dann muss man die 4 und die 7 belegen, um mit der 10 zu gewinnen.</p>
+</blockquote>
+<p>Warum ist das nur ein Zwischenergebnis?
+Nun, eine Information fehlt noch: Wie reagiert man auf das Lege-Verhalten des Spielpartners?
+Die Frage mutet an dieser Stelle vielleicht etwas seltsam an, weil man die wenigen Gewinnpositionen (1, 4, 7) gut übersehen und damit zielsicher auf jede Legeweise reagieren kann.
+Im Hinblick auf weitere Variationen der Spielparameter (s. u.) und v. a. im Hinblick auf ein generelles, <em>verallgemeinerbares</em> Verständnis der Gewinnstrategie macht die Frage aber Sinn.
+Somit lautet die präzisierte, abschließende Gewinnstrategie für den vorliegenden Fall:</p>
+<blockquote>
+<p>Um die 10 mit Sicherheit zu erreichen, muss man auch die Positionen 7, 4 und 1 belegen. Daher muss man selbst beginnen und zwar mit 1 Plättchen.</p>
+<p>Während des Spielverlaufs reagiert man auf die Züge des Spielpartners stets »gegensätzlich« (in Anführungszeichen, weil 1 ja nicht das Gegenteil von 2 ist und umgekehrt): Legt er 1, legt man selbst 2 und umgekehrt.</p>
+</blockquote>
+<p>Die bisher erläuterte Gewinnstrategie kann man, wenn es sein müsste, auch rezepthaft lernen, ohne verstanden zu haben, warum die Regel so lauten muss.
+Und auch die Tatsache, dass man das bisher Gesagte durchweg plausibel finden kann und glaubt, verstanden zu haben, kann trügerisch sein!
+<em>Wirkliches</em> Verständnis der dem Spiel zugrunde liegenden Struktur lässt sich nämlich u. a. daran überprüfen, ob und inwieweit man das Wissen auf andere, variierte (aber strukturgleiche) Situationen übertragen und adaptieren kann.
+<strong>An welchen »Stellschrauben« des Spiels könnte man drehen?</strong> Es sind die <em>konstituierenden Bestandteile</em> des Kontextes:</p>
+<ul>
+<li>Spielplanlänge/<em>Feldlänge</em> <span class="math inline">\(F\)</span> – hier: bis 10, lässt sich variieren zu <span class="math inline">\(F &gt; 10\)</span>,</li>
+<li>erlaubte <em>Legezahl</em> <span class="math inline">\(L\)</span> – hier: bis 2, lässt sich variieren zu <span class="math inline">\(L &gt; 2\)</span>,</li>
+<li>letztes Feld <em>gewonnen</em> – lässt sich variieren zu letztes Feld <em>verloren</em>.</li>
+</ul>
+<p>Man kann entweder, wie unten zu sehen, nur einen Parameter verändern, alle anderen bleiben gleich.
+Oder man verändert mehrere Parameter. Im Hinblick auf die <strong>Strukturerkenntnis</strong> ist es sinnvoll, zunächst nur mit einem Bestandteil zu »spielen«, um seinen Einfluss/Effekt zu isolieren.
+Würde man mehrere Parameter gleichzeitig verändern, wäre nur schwer entscheidbar, welcher Effekt auf welche Veränderung zurückzuführen ist.</p>
+</div>
+<div id="variation-der-feldlaenge" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Variation der Feldlänge</h3>
+<blockquote>
+<p>Feldlänge 15 (20) – Legezahl 2 – letztes Feld gewinnt</p>
+</blockquote>
+<p>Dieser Abschnitt behandelt eine <strong>Variation der Feldlänge</strong> um ein weiterhin überschaubares Maß auf 15 (bzw. 20).
+Die Erfahrungen der ersten Version voraussetzend, lässt sich dann Folgendes festhalten:</p>
+<ul>
+<li>Um die 15 (resp. 20) garantiert zu erreichen, müssen auch die vorherigen Gewinnpositionen 12, 9, 6 und 3 (resp. 17, 14, 11, 8, 5 und 2) belegt werden. Folglich gilt:</li>
+<li>Bei Feldlänge 15 darf man nicht selbst beginnen. Bei Feldlänge 20 muss man selbst beginnen, und zwar mit 2 Plättchen.</li>
+<li>Im Spielverlauf legt man immer 1 Plättchen, wenn der Spielpartner 2 legt und umgekehrt.</li>
+</ul>
+<p>Damit lassen sich aus Gemeinsamkeiten und Unterschieden zur ersten Version die Erkenntnisse wie folgt präzisieren:</p>
+<p>Die Gewinnpositionen liegen in allen betrachteten Fällen gleich weit auseinander (drei Felder).
+Man findet sie, indem man von der letzten Gewinnposition in Dreierschritten rückwärts schreitet.
+Ein »kompletter« Dreierschritt (in Abb. <a href="das-nim-spiel.html#fig:Gewinnstrategie15">1.4</a> als Rahmen markiert) besteht immer aus einem eigenen Zug und einem Zug des Spielpartners.
+<strong>Um zu gewinnen, sollte jeder Rahmen tunlichst mit dem Zug des Spielpartners beginnen, damit man selbst dann den Rahmen voll machen kann.</strong></p>
+<div class="figure" style="text-align: center"><span id="fig:Gewinnstrategie15"></span>
+<img src="pictures/Gewinnstrategie15.png" alt="Gewinnstrategie bei 15 bzw. 20 Feldern" width="100%" />
+<p class="caption">
+Abb. 1.4: Gewinnstrategie bei 15 bzw. 20 Feldern
+</p>
+</div>
+<p>Was bedeutet dies aber für den Spielbeginn? Um diesen zu kontrollieren, reicht es aus, auf den ersten Dreierschritt zu fokussieren:</p>
+<blockquote>
+<p><strong>Bei Feldlänge 15</strong> beginnt das Spiel mit einem »kompletten« Dreierschritt. Man selbst muss sich also, um die 3 als erste Gewinnposition zu erreichen, »großzügig« zeigen und dem Spielpartner die Spiel-Eröffnung überlassen, was er wahlweise mit 1 oder 2 Plättchen tun kann; ab dann »bleibt alles im Rahmen«.<br />
+<strong>Bei Feldlänge 20</strong> beginnt das Spiel nicht mit einem kompletten Dreierschritt – vielmehr steht dem hier ein überzähliger Rest vor. Um zu gewinnen, muss man nun selbst zunächst diesen »Überstand« für sich vereinnahmen, um danach die gewohnten Dreierschritte der Rahmen abarbeiten zu können. Man muss also selbst beginnen und genau 2 Plättchen (den Rest) legen.</p>
+</blockquote>
+</div>
+<div id="variationen-status-letztes-feld" class="section level3" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Variationen Status letztes Feld</h3>
+<blockquote>
+<p>Feldlänge 10 (15, 20) – Legezahl 2 – letztes Feld verliert</p>
+</blockquote>
+<p>Die <strong>Status-Variation</strong> des letzten Feldes besagt: Wer das letzte Feld belegt, hat nun <strong>verloren</strong>.
+Die Erfahrungen aus den ersten beiden Versionen voraussetzend, lässt sich dann Folgendes festhalten:</p>
+<ul>
+<li>Die letzte Gewinnposition lautet nun 9 (resp. 14, 19).</li>
+<li>Um die 9 (resp. 14, 19) mit Sicherheit zu erreichen, muss man auch die 6 und die 3 (resp. 11, 8, 5 und 2 bzw. 16, 13, 10, 7, 4 und 1) belegen. Folglich gilt:</li>
+<li>Bei Feldlänge 10 darf man nicht selbst beginnen. Bei Feldlänge 15 muss man selbst beginnen, und zwar mit 2 Plättchen. Bei Feldlänge 20 muss man ebenfalls selbst beginnen, und zwar mit 1 Plättchen.</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:GewinnstrategieStatus"></span>
+<img src="pictures/GewinnstrategieStatus.png" alt="Gewinnstrategie, wenn letztes Feld verliert" width="100%" />
+<p class="caption">
+Abb. 1.5: Gewinnstrategie, wenn letztes Feld verliert
+</p>
+</div>
+<p>Zwischen-Fazit:</p>
+<blockquote>
+<p>Die zuvor gewonnenen Erkenntnisse – über die Dreierschritte, wie sie »abgearbeitet« werden müssen, wer beginnen soll oder nicht darf – konnten prinzipiell aus den bisherigen Versionen des Spiels auf diese Variation übertragen werden (Transfer).</p>
+<p>Bei der Status-Variation des letzten Feldes schlägt sich der Austausch von <em>gewonnen</em>/<em>verloren</em> lediglich in einer Verschiebung der Dreierschritte um 1 Feld nach links nieder, denn jetzt ist – unabhängig von der Feldlänge – nicht das letzte, sondern das vorletzte Feld die letzte Gewinnposition.</p>
+</blockquote>
+</div>
+<div id="variation-der-legezahl" class="section level3" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> Variation der Legezahl</h3>
+<blockquote>
+<p>Feldlänge 20 – Legezahl 3 (bzw. 4) – 20 gewinnt</p>
+</blockquote>
+<p>Dieser Abschnitt betrifft den dritten und letzten Parameter, die <strong>Variation der maximal erlaubten Legezahl</strong>.
+Die Erfahrungen aus den ersten drei Versionen voraussetzend, lässt sich dann Folgendes festhalten:</p>
+<ul>
+<li>Mit der maximalen Legezahl von 3 (bzw. 4) Plättchen beträgt die Schrittweite 4 (bzw. 5).</li>
+<li><em>Allgemein</em> gilt für das Verhältnis zwischen Legezahl <span class="math inline">\(L\)</span> und Schrittweite <span class="math inline">\(S\)</span> stets: <span class="math inline">\(S = L + 1\)</span></li>
+</ul>
+<p>Begründung: Ein »kompletter« Schritt (die Schrittweite) besteht aus genau einem Zug des Spielpartners und genau einem eigenen Zug (symbolisiert durch den Rahmen in Abb. <a href="das-nim-spiel.html#fig:Gewinnstrategie15">1.4</a>).
+Der eigene Zug schließt dabei jede Schrittweite ab, komplettiert also den Rahmen.</p>
+<p>Daher darf die dem Spielpartner maximal erlaubte Legezahl nicht so groß sein, dass er die nächste Gewinnposition erreichen könnte.
+Anders ausgedrückt: Es muss nach dieser maximalen Legezahl durch den Spielpartner noch genau ein Feld frei bleiben, das man selbst belegen kann, und das sollte eine Gewinnposition sein.
+Daher ist die Schrittweite stets um 1 größer als die maximale Legezahl.</p>
+<p>Das ursprünglich erwähnte Rezept, stets »das Gegenteil« zu tun, funktioniert hier nun nicht mehr, ganz abgesehen davon, dass die Formulierung ja vorher bereits recht unpräzise war, weil 1 und 2 keine »Gegenteile« voneinander sind.
+Auch hier lässt sich also jetzt präzisieren:</p>
+<blockquote>
+<p>Im gesamten Spielverlauf ergänzt man stets die Legezahl des Spielpartners auf die Schrittweite, also den Wert »Legezahl plus 1«.</p>
+<p>Der Beginn des Spiels muss so gestaltet werden, dass man selbst die erste Gewinnposition sicher belegen kann.</p>
+</blockquote>
+</div>
+<div id="sehr-große-feldlängen-und-legezahlen" class="section level3" number="1.3.5">
+<h3><span class="header-section-number">1.3.5</span> Sehr große Feldlängen und Legezahlen</h3>
+<blockquote>
+<p>Feldlänge 1000 – Legezahl 23 – letztes Feld gewinnt</p>
+</blockquote>
+<p>Dieser Abschnitt zielt auf eine <strong>zunehmende Verallgemeinerung der Gewinnstrategie</strong>.
+Die bisherigen Erkenntnisse ließen sich allesamt durch konkretes Ausprobieren gewinnen und am Material anschaulich begründen.
+Das ist im Hinblick auf Unterricht ein Vorteil, denn diese Vorgehensweisen stehen auch bereits Grundschulkindern offen.</p>
+<p>Mit der folgenden Variation soll diese empirische Praxis aber an ihre Grenzen geführt werden, um die <em>allgemeine Struktur</em> des Nim-Spiels aufzuklären.
+Die zunehmende Komplexität der Parameter verweist also auf leistungsfähigere Strategien als das empirische Ausprobieren.
+Und leistungsfähig meint zum einen eine ökonomischere Praxis als das tatsächliche Durchspielen; und zum anderen ein Verfahren, dass insofern <em>verallgemeinerungsfähig</em> ist, sodass man nicht für jede Regel-Variation eine erneute Erkundung benötigt, sondern sogleich sagen kann, was Sache ist.</p>
+<p>Alles Erforderliche, um für die nach der Überschrift genannte Konstellation ohne konkrete Spielhandlungen oder umfangreiche Skizzen zum Ziel zu kommen, wurde bereits zuvor erkannt:
+Erkenntnisse zur Schrittweite zwischen den Gewinnpositionen, die Identifikation aller Gewinnpositionen, wer auf welche Weise mit dem Legen beginnen sollte und wie man auf die Lege-Aktionen des Mitspielers reagiert.
+Das bedeutet:</p>
+<ul>
+<li>Die maximale Legezahl <span class="math inline">\(L = 23\)</span> bedeutet eine Schrittweite zwischen den Gewinnpositionen von <span class="math inline">\(L + 1 = 24\)</span>.</li>
+<li>Da das Feld 1000 eine Gewinnposition ist, müsste dort beginnend sukzessive immer wieder 24 subtrahiert werden, um die Folge der Gewinnpositionen zu erhalten.</li>
+</ul>
+<p>Das ist bei diesen großen Zahlen aber erstens mühsam, und zweitens gar nicht notwendig.
+Das Verständnis von Rechenoperationen ausnutzend, versteht sich die <strong>Division als verkürzte Subtraktion</strong>.</p>
+<p>Beispiel: Um die 20 mit Dreierschritten aufzufüllen, könnte man bei 20 beginnend schrittweise immer wieder 3 subtrahieren:
+<span class="math inline">\(20-3-3-3-3-3-3\)</span>, um zu sehen, dass es sechs Mal geht und dann 2 übrig bleiben.
+Dieses Vorgehen lässt sich verkürzen durch die Frage: Wie oft passt die 3 in die 20?
+Und das lässt sich mit Hilfe der Division <span class="math inline">\(20 : 3 = 6\)</span> Rest <span class="math inline">\(2\)</span> beantworten.</p>
+<p>Die Frage, wie oft ein 24er-Schritt in die Feldlänge 1000 passt, führt also zur Rechnung <span class="math inline">\(1000 : 24 = 41\)</span> Rest <span class="math inline">\(16\)</span>. Das heißt:</p>
+<blockquote>
+<p>41 Mal können 24er-Schritte (Rahmen in Abb. <a href="das-nim-spiel.html#fig:Gewinnstrategie15">1.4</a>) kontrolliert ablaufen. Vorab muss nur der überzählige Rest (hier 16) »gesichert« werden, bevor der Spielpartner mit dem ersten 24er-Schritt beginnt. Mit anderen Worten:</p>
+<p>Man muss selbst beginnen, und zwar mit 16 Plättchen (dem berechneten Rest).</p>
+</blockquote>
+<p>Was aber tut man dann weiterhin, zwischendurch …? Wie in der letzten Version gesehen, braucht man weder alle Gewinnpositionen der 24er-Schritte ab 1000 rückwärts zu kennen noch sich zu merken!</p>
+<blockquote>
+<p>Während des weiteren Spielverlaufs achtet man auf die gelegte Anzahl des Spielpartners und ergänzt diese mit dem eigenen Zug auf den Wert der Schrittweite (hier: 24). Man landet dann automatisch auf einer Gewinnposition – und zwar ohne dass man sie namentlich kennen oder erinnern müsste!</p>
+</blockquote>
+<p>Beispiel: Legt der Spielpartner 10 Plättchen, legt man selbst 14; legt der Spielpartner 2, reagiert man selbst mit 22 usw.
+Selbst bei einer vergleichsweise großen maximalen Legezahl wie etwa 24 sind solche Ergänzungsaufgaben immer noch leicht im Kopf zu erledigen.</p>
+</div>
+<div id="allgemeine-gewinnstrategie" class="section level3" number="1.3.6">
+<h3><span class="header-section-number">1.3.6</span> Allgemeine Gewinnstrategie</h3>
+<p>Das bisher Erkannte erlaubt nun die Verallgemeinerung der Gewinnstrategie für beliebige Feldlängen <span class="math inline">\(F\)</span>, beliebige Legezahlen <span class="math inline">\(L\)</span> und ein beliebiges <em>gewonnen</em>/<em>verloren</em> für das letzte Feld:</p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Man dividiere die Feldlänge <span class="math inline">\(F\)</span> (bzw. <span class="math inline">\(F-1\)</span>, wenn das letzte Feld <em>verliert</em>) durch die Schrittweite <span class="math inline">\(S = L+1\)</span> und schaue, ob diese Division einen Rest <span class="math inline">\(R\)</span> ergibt: <span class="math inline">\(F : (L + 1) = …?\)</span></p></li>
+<li><p>Ist der Rest Null, dann sollte der Spielpartner beginnen. Ansonsten muss man selbst beginnen, und zwar mit <span class="math inline">\(R\)</span> Plättchen.</p></li>
+<li><p>Im weiteren Verlauf ergänzt man die Legezahl des Spielpartners durch den eigenen Zug stets auf die Schrittweite <span class="math inline">\(L + 1\)</span>.</p></li>
+</ol>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Weitere Personen, die eine Weile die Spielverläufe <em>beobachtend</em> verfolgen, können sich aber gedanklich ebenso an der Suche nach der Gewinnstrategie beteiligen.<a href="das-nim-spiel.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Wenn eine der spielenden Personen die Strategie kennt und beherrscht, verliert das Spiel natürlich – zunächst jedenfalls! – seinen Reiz. Neue Herausforderungen – auch für ältere Schülerinnen und Schüler und Erwachsene – stellen sich aber ad hoc ein, wenn man sich auf die verschiedenen Variationen einlässt (vgl. Abschnitte <a href="das-nim-spiel.html#variation-der-feldlaenge">1.3.2</a> bis <a href="das-nim-spiel.html#allgemeine-gewinnstrategie">1.3.6</a>)!<a href="das-nim-spiel.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Diese Beobachtung kann auch eine dritte, nicht mitspielende Person übernehmen/protokollieren.<a href="das-nim-spiel.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="didaktische-empfehlungen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/heiko-etzold/nim-material/blob/de.1.0/1-Nim-Spiel.Rmd",
+"text": null
+},
+"download": ["Nim-Handreichung.pdf"],
+"toc": {
+"collapse": "subsection"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+---
+title: "Nim-Spiel -- Handreichung für Lehrerinnen und Lehrer"
+description: "Anleitungen und Hinweise zur Nutzung der Nim-App"
+author: "Heiko Etzold, Günter Krauthausen"
+date: |
+  Version 1.0, `r format(Sys.time(), '%B %Y')`; angepasst an Version 1.0 der Nim-App
+
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        before:
+          <li><a href="index.html"><b>Nim-Handreichung</b></a></li>
+        after:
+          <li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="pictures/by-sa.png" height="20px"/></a></li>
+      sharing:
+        facebook: false
+        twitter: false
+        all: false
+        github: true
+      info: false
+    css: "own.css"
+    split_bib: false
+  bookdown::pdf_book:
+    toc: true
+    includes:
+      in_header: "in_header.tex"
+      before_body: "before_body.tex"
+    latex_engine: xelatex
+documentclass: scrbook
+lang: de-DE
+github-repo: "heiko-etzold/nim-material/tree/de.1.0"
+bibliography: "references.bib"
+csl: "apa.csl"
+link-citations: yes
+url: "https://heiko-etzold.github.io/nim-material/de/1.0"
+---
+
+# Einleitung {- #Einleitung}
+
+Der Nim-App liegt das bekannte **Nim-Spiel** zugrunde, ein sehr altes **Strategie-Spiel**, das es in zahlreichen Varianten gibt: mit Wegnehmen statt Legen, mit mehreren Stapeln usw. 
+Der vorliegenden App liegt eine elementare Version zugrunde [vgl. @Mueller1984 {72-75}; @Wittmann1982], die ab der 1. Klassenstufe eingesetzt werden kann und auch bereits mit Vorschulkindern sowie Kindern mit besonderen Lernschwierigkeiten erfolgreich erprobt wurde [@Scherer1996]. 
+Aber auch für Jugendliche und Erwachsene bietet das Spiel eine Herausforderung, wenn es darum geht, die Gewinnstrategie (siehe Abschnit \@ref(gewinnstrategie)) zu identifizieren und v. a. zu verallgemeinern. 
+Im *Handbuch produktiver Rechenübungen* [@Wittmann2017, {42 f.}] heißt das Spiel »Rot gegen Blau«.
+
+Die Nim-App steht kostenlos für iPads und Macs unter https://apps.apple.com/de/app/nim/id1590325148 zur Verfügung.
+
+Die aktuelle Version dieser Handreichung bezieht sich auf die **Nim-App in der Version 1.0**.
+
+
+## Über diese Handreichung {-}
+
+> zitiere als: Etzold, H. & Krauthausen, G. (2022). <i>Nim-Spiel -- Handreichung für Lehrerinnen und Lehrer</i> (Version 1.0). https://heiko-etzold.github.io/nim-material/de/1.0
+
+Diese Handreichung umfasst:
+
+* [Kapitel 1](#das-nim-spiel): Erläuterung des Spiels, seiner Regeln und der Gewinnstrategie (für diverse variierte Parameter, inkl. einer Verallgemeinerung)
+* [Kapitel 2](#didaktische-empfehlungen): Didaktische Hinweise zum unterrichtlichen Einsatz des Spiels (ohne und mit ergänzendem Einsatz der App)
+* [Kapitel 3](#die-nim-app): Beschreibung der Nim-App und ihrer möglichen Einsatzszenarien im Unterricht
+* Anhang zu Hintergründen zum Nim-Spiel und zu technischen Hintergründen zur App
+
+Diese Reihenfolge ist bewusst gewählt. 
+Auch wenn bei der Entwicklung der App versucht wurde, möglichst viele jener Intentionen, Optionen oder Herausforderungen aus den beiden erstgenannten Punkten umzusetzen, so soll und kann die App kein Ersatz für eine sachgerechte Einbetting in didaktische Kontexte (Unterrich) sein. 
+Sie kann eine didaktisch sinnvolle Ergänzung darstellen -- es wird aber aus- und nachdrücklich empfohlen, die in den Kapiteln 1 und 2 genannten Erfahrungen händisch und im physischen Kontext zu erwerben.
+
+Wir sprechen in dieser Handreichung mal von Schülern, Spielern und Partnern, mal von Schülerinnen, Spielerinnen, Partnerinnen oder auch von Personen, Lernenden, Lehrkräften usw. Die jeweils anderen wollen wir damit selbstredend ebenso ansprechen. Auch die männlichen Lehrpersonen meinen wir immer mit, wenn wir von Lehrerinnen sprechen, die in der Grundschule die absolute Mehrheit darstellen. Alle mögen sich darüber freuen, dass der Text dadurch ein wenig lesbarer wird.
+
+
+## Lizenz und Versionen dieser Handreichung {-}
+
+Dieses  Material  ist  eine  **offene  Bildungsressource**  und  steht  unter  der  Creative-Commons-Lizenz »Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International (**CC BY-SA 4.0**)«. 
+Um eine Kopie dieser Lizenz zu sehen, besuchen Sie 
+[https://creativecommons.org/licenses/by-sa/4.0/deed.de](https://creativecommons.org/licenses/by-sa/4.0/deed.de){target="_blank"}.
+
+Es ist sowohl möglich als aus erwünscht, das **Material frei zu nutzen, zu ändern, weiterzuentwickeln** und entsprechend zu veröffentlichen. 
+Bei entsprechender Passung können Änderungen oder Ergänzungen auch direkt hier im Dokument aufgenommen werden, z. B. auch Übersetzungen -- nehmen Sie dazu einfach [Kontakt](mailto:heiko.etzold@uni-potsdam.de) auf.
+
+Die **Rohdaten** der Handreichung stehen unter [https://github.com/heiko-etzold/nim-material](https://github.com/heiko-etzold/nim-material){target="_blank"} zur Verfügung. 
+Dort können, ensprechend eines Git-Respositorys, auch vorherige Versionen und die Änderungen verfolgt werden.
+
+Eine Übersicht über alle Versionen der Handreichung kann unter  https://heiko-etzold.github.io/nim-material eingesehen werden.
+
+
+## Dankeschön {-}
+
+Wir danken allen Personen und Institutionen, die uns bei der Entwicklung der Nim-App unterstützt haben. 
+
+* Bei den Übersetzungen haben uns unterstützt:
+  * Arabisch: Sophie Abdulkarim-Hoerster & Raam Abdulkarim, Potsdam
+  *	Kölsch: Ruth Wolfram & Alice Herrwegen, Köln, Akademie för uns kölsche Sproch (https://www.koelsch-akademie.de) und Dieter Krauthausen, Köln (https://www.tonstudio-krauthausen.de) 
+  * Russisch: Karen Reitz-Koncebovski, Potsdam
+  * Ukrainisch: Tania Kosenkova, Potsdam
+* Die Praxiserprobungen haben unterstützt:
+  *	Boris Kolberg, Einrichtungsleitung Schulkindbetreuung, Salzhausen
+  *	Sylvia Kirsch, Lehrerin, und Kinder der Grundschule Salzhausen
+
+
