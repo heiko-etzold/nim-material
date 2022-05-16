@@ -11,7 +11,7 @@ Solle diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnah
 ## Übersetzungen {#uebersetzungen}
 
 Um die App in möglichst vielen Sprachen anbieten zu können (vgl. Abschnitt \@ref(globale-einstellungen)), freuen wir uns über Ihre Mitarbeit bei der Übersetzung. 
-Hierzu findet sich unter ***LINK*** eine (englischsprachige) Anleitung, wie die entsprechenden Texte für eine neue Sprache erzeugt werden können. 
+Hierzu findet sich unter https://github.com/heiko-etzold/nim-app eine Anleitung, wie die entsprechenden Texte für eine neue Sprache erzeugt werden können. 
 
 ## Datenschutz und Archiv-Dateien
 
@@ -67,7 +67,7 @@ Im Folgenden ist der exemplarische Aufbau einer solchen Datei mit zwei Spielverl
 Nach jedem Spiel (außer dem letzten) kommt ein Komma (siehe Zeile `19`).
 
 * Unter `leftPlayerName` und `rightPlayername` (Zeilen `3` und `4`) werden die Namen der Spieler/-innen abgespeichert. Wird kein Name gespeichert (dies entspricht dem Wert `""`, siehe Zeile `21`), so wird beim Erkunden des Spiels *Links* oder *Rechts* als Name dargestellt. 
-In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim Export nicht gespeichert werden (siehe Abschnitt ***???***). 
+In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim Export nicht gespeichert werden (siehe Abschnitt \@ref(globale-einstellungen)). 
 
 * Unter `leftPlayerColor` und `rightPlayerColor` (Zeilen `5` und `6`) werden die Spielfarben der Spieler/-innen abgespeichert. Folgende Werte sind möglich:
   - `red`: rot 
@@ -90,5 +90,5 @@ In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim E
 
 * Unter `listOfColors` (Zeilen `9`bis `17` wird die Liste der Farben abgespeichert, die die im Spiel gelegten Plättchen haben. Die Anzahl der Farben entspricht dann der Spielfeldlänge. Auch hier führen fehlerhaft angegebene Farben zu einer Fehlermeldung beim Öffnen der Datei mit der Nim-App.
 
-* Unter `gameNumber` wird eine Nummer abgespeichert, um die Reihenfolge der Spiele nachvollziehen zu können. Bei jedem neuen Spiel, das in das Archiv gelegt wird, wird eine höhere Nummer als bei den vorherigen Spielen gewählt. Dies ist notwendig, um die Spiele im Archiv chronologisch ordnen zu können (siehe Abschnit \@ref(archivieren-und-analysieren)). 
+* Unter `gameNumber` wird eine Nummer abgespeichert, um die Reihenfolge der Spiele nachvollziehen zu können. Bei jedem neuen Spiel, das in das Archiv gelegt wird, wird eine höhere Nummer als bei den vorherigen Spielen gewählt. Dies ist notwendig, um die Spiele im Archiv chronologisch ordnen zu können (siehe Abschnit \@ref(archivieren-und-untersuchen)). 
 

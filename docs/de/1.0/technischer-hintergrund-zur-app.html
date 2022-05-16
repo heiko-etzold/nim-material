@@ -280,7 +280,7 @@ Solle diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnah
 <div id="uebersetzungen" class="section level2" number="5.2">
 <h2><span class="header-section-number">B.2</span> Übersetzungen</h2>
 <p>Um die App in möglichst vielen Sprachen anbieten zu können (vgl. Abschnitt <a href="die-nim-app.html#globale-einstellungen">3.4</a>), freuen wir uns über Ihre Mitarbeit bei der Übersetzung.
-Hierzu findet sich unter <strong><em>LINK</em></strong> eine (englischsprachige) Anleitung, wie die entsprechenden Texte für eine neue Sprache erzeugt werden können.</p>
+Hierzu findet sich unter <a href="https://github.com/heiko-etzold/nim-app" class="uri">https://github.com/heiko-etzold/nim-app</a> eine Anleitung, wie die entsprechenden Texte für eine neue Sprache erzeugt werden können.</p>
 </div>
 <div id="datenschutz-und-archiv-dateien" class="section level2" number="5.3">
 <h2><span class="header-section-number">B.3</span> Datenschutz und Archiv-Dateien</h2>
@@ -330,7 +330,7 @@ Im Folgenden ist der exemplarische Aufbau einer solchen Datei mit zwei Spielverl
 <li><p>Die Zeilen <code>2</code> und <code>19</code> rahmen das erste Spiel ein.
 Nach jedem Spiel (außer dem letzten) kommt ein Komma (siehe Zeile <code>19</code>).</p></li>
 <li><p>Unter <code>leftPlayerName</code> und <code>rightPlayername</code> (Zeilen <code>3</code> und <code>4</code>) werden die Namen der Spieler/-innen abgespeichert. Wird kein Name gespeichert (dies entspricht dem Wert <code>""</code>, siehe Zeile <code>21</code>), so wird beim Erkunden des Spiels <em>Links</em> oder <em>Rechts</em> als Name dargestellt.
-In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim Export nicht gespeichert werden (siehe Abschnitt <strong><em>???</em></strong>).</p></li>
+In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim Export nicht gespeichert werden (siehe Abschnitt <a href="die-nim-app.html#globale-einstellungen">3.4</a>).</p></li>
 <li><p>Unter <code>leftPlayerColor</code> und <code>rightPlayerColor</code> (Zeilen <code>5</code> und <code>6</code>) werden die Spielfarben der Spieler/-innen abgespeichert. Folgende Werte sind möglich:</p>
 <ul>
 <li><code>red</code>: rot</li>
@@ -349,7 +349,7 @@ In den globalen App-Einstellungen kann eingestellt werden, dass die Namen beim E
 <p>Wird ein anderer Wert eingetragen, erfolgt beim Öffnen der Datei mit der Nim-App eine Fehlermeldung.</p></li>
 <li><p>Unter <code>numberOfMaximalCircles</code> (Zeile <code>8</code>) wird die maximale Anzahl an gleichfarbigen Plättchen gespeichert, die hintereinander gelegt werden dürfen. Der Wert muss <code>1</code>, <code>2</code>, <code>3</code>oder <code>4</code> betragen, ansonsten erfolgt beim Öffnen der Datei mit der Nim-App eine Fehlermeldung.</p></li>
 <li><p>Unter <code>listOfColors</code> (Zeilen <code>9</code>bis <code>17</code> wird die Liste der Farben abgespeichert, die die im Spiel gelegten Plättchen haben. Die Anzahl der Farben entspricht dann der Spielfeldlänge. Auch hier führen fehlerhaft angegebene Farben zu einer Fehlermeldung beim Öffnen der Datei mit der Nim-App.</p></li>
-<li><p>Unter <code>gameNumber</code> wird eine Nummer abgespeichert, um die Reihenfolge der Spiele nachvollziehen zu können. Bei jedem neuen Spiel, das in das Archiv gelegt wird, wird eine höhere Nummer als bei den vorherigen Spielen gewählt. Dies ist notwendig, um die Spiele im Archiv chronologisch ordnen zu können (siehe Abschnit <a href="#archivieren-und-analysieren"><strong>??</strong></a>).</p></li>
+<li><p>Unter <code>gameNumber</code> wird eine Nummer abgespeichert, um die Reihenfolge der Spiele nachvollziehen zu können. Bei jedem neuen Spiel, das in das Archiv gelegt wird, wird eine höhere Nummer als bei den vorherigen Spielen gewählt. Dies ist notwendig, um die Spiele im Archiv chronologisch ordnen zu können (siehe Abschnit <a href="die-nim-app.html#archivieren-und-untersuchen">3.3</a>).</p></li>
 </ul>
 
 </div>
