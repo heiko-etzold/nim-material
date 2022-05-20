@@ -29,7 +29,7 @@ Auf einer durchnummerierten Felderreihe (der Länge $F$) werden von zwei Spieler
 Wer das letzte Feld belegen kann, hat gewonnen. Gesucht wird die Gewinnstrategie, also ein Vorgehen, welches garantiert, dass man zu jedem Zeitpunkt des Spielverlaufs das Spiel kontrollieren kann und mit Sicherheit gewinnt. 
 In der Neubearbeitung des Handbuchs produktiver Rechenübungen firmiert das Spiel unter dem Namen »Rot gegen Blau« [@Wittmann2017, {42 f.}].
 
-Die Parameter Feldlänge, erlaubte maximale Legezahl und der Status des letzte Feldes (gewonnen/verloren) können – einzeln oder in Kombinationen – variiert werden. 
+Die Parameter Feldlänge, erlaubte maximale Legezahl und der Status des letzten Feldes (gewonnen/verloren) können – einzeln oder in Kombinationen – variiert werden. 
 Dadurch können Vermutungen über die Gewinnstrategie überprüft, begründet und zunehmend verallgemeinert werden.
 
 
@@ -62,7 +62,7 @@ Auch der damalige Bundeswirtschaftsminister Ludwig Erhard wagte ein paar Spiele,
 Bundeskanzler Konrad Adenauer war ebenfalls anwesend, spielte aber nicht, da ein ein direkter Vergleich zwischen Staatschef und Computer zur damaligen Zeit nicht opportun war.
 
 Die Herstellerfirma hat den *Nimrod* später wieder demontiert. Ein kleinerer Nachbau des Originalcomputers findet sich im Computerspielemuseum Berlin, eine Simulation findet sich unter @nimrod-sim. 
-Der *Nimrod* war sicher der erste Spielcomputer der Welt. Kontrovers diskutiert wird hingegen die Frage ob Nim auch als erstes Computerspiel gelten werden kann [@nimrod].
+Der *Nimrod* war sicher der erste Spielcomputer der Welt. Kontrovers diskutiert wird hingegen die Frage, ob Nim auch als erstes Computerspiel bezeichnet werden kann [@nimrod].
 
 
 ### Aufbau und Funktionsweise

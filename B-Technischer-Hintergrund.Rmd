@@ -6,7 +6,7 @@
 Der Quellcode zur App steht unter einer offenen Lizenz unter https://github.com/heiko-etzold/nim-app zur Verfügung.
 
 Da die App derzeit nur für iPadOS und macOS entwickelt wurde, bietet sich über den freien Quelltext die Möglichkeit, auch Versionen für andere Plattformen zu realisieren. 
-Solle diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnahme über die entsprechende GitHub-Seite.
+Sollte diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnahme über die entsprechende GitHub-Seite.
 
 ## Übersetzungen {#uebersetzungen}
 
