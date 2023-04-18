@@ -8,6 +8,19 @@ Der Quellcode zur App steht unter einer offenen Lizenz unter https://github.com/
 Da die App derzeit nur für iPadOS und macOS entwickelt wurde, bietet sich über den freien Quelltext die Möglichkeit, auch Versionen für andere Plattformen zu realisieren. 
 Sollte diesbezüglich Interesse bestehen, freuen wir uns über eine Kontaktaufnahme über die entsprechende GitHub-Seite.
 
+## Versionsverlauf
+
+Handreichung zur Version 1.0: https://heiko-etzold.github.io/nim-material/de/1.0
+
+### Änderungen in Version 1.1 {-}
+
+* Isländisch und Plattdeutsch als Sprachversionen hinzugefügt.
+* Es ist nun möglich, einzelne Spiele aus dem Archiv herauszuziehen und diese als Bilder in anderen Apps zu verwenden bzw. sie als Bilder in die Zwischenablage zu kopieren.
+* Fehlerbehebungen bei der Anzeige der Nummerierung der Felder
+
+Handreichung zur Version 1.1: https://heiko-etzold.github.io/nim-material/de/1.1
+
+
 ## Übersetzungen {#uebersetzungen}
 
 Um die App in möglichst vielen Sprachen anbieten zu können (vgl. Abschnitt \@ref(globale-einstellungen)), freuen wir uns über Ihre Mitarbeit bei der Übersetzung. 

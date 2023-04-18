@@ -3,7 +3,7 @@ title: "Nim-Spiel -- Handreichung für Lehrerinnen und Lehrer"
 description: "Anleitungen und Hinweise zur Nutzung der Nim-App"
 author: "Heiko Etzold, Günter Krauthausen"
 date: |
-  Version 1.0, `r format(Sys.time(), '%B %Y')`; angepasst an Version 1.0 der Nim-App
+  Version 1.1, `r format(Sys.time(), '%B %Y')`; angepasst an Version 1.1 der Nim-App
 
 site: bookdown::bookdown_site
 output:
@@ -30,11 +30,11 @@ output:
     latex_engine: xelatex
 documentclass: scrbook
 lang: de-DE
-github-repo: "heiko-etzold/nim-material/tree/de.1.0"
+github-repo: "heiko-etzold/nim-material/tree/de.1.1"
 bibliography: "references.bib"
 csl: "apa.csl"
 link-citations: yes
-url: "https://heiko-etzold.github.io/nim-material/de/1.0"
+url: "https://heiko-etzold.github.io/nim-material/de/1.1"
 ---
 
 # Einleitung {- #Einleitung}
@@ -46,12 +46,12 @@ Im *Handbuch produktiver Rechenübungen* [@Wittmann2017, {42 f.}] heißt das Sp
 
 Die Nim-App steht kostenlos für iPads und Macs unter https://apps.apple.com/de/app/nim/id1590325148 zur Verfügung.
 
-Die aktuelle Version dieser Handreichung bezieht sich auf die **Nim-App in der Version 1.0**.
+Die aktuelle Version dieser Handreichung bezieht sich auf die **Nim-App in der Version 1.1** (siehe auch Abschnitt \@ref(versionsverlauf)).
 
 
 ## Über diese Handreichung {-}
 
-> zitiere als: Etzold, H. & Krauthausen, G. (2022). <i>Nim-Spiel -- Handreichung für Lehrerinnen und Lehrer</i> (Version 1.0). https://heiko-etzold.github.io/nim-material/de/1.0
+> zitiere als: Etzold, H. & Krauthausen, G. (2022). <i>Nim-Spiel -- Handreichung für Lehrerinnen und Lehrer</i> (Version 1.1). https://heiko-etzold.github.io/nim-material/de/1.1
 
 Diese Handreichung umfasst:
 
@@ -88,7 +88,9 @@ Wir danken allen Personen und Institutionen, die uns bei der Entwicklung der Nim
 
 * Bei den Übersetzungen haben uns unterstützt:
   * Arabisch: Sophie Abdulkarim-Hoerster & Raam Abdulkarim, Potsdam
+  * Isländisch: Bjarnheiður Kristinsdóttir, Reykjavík
   *	Kölsch: Ruth Wolfram & Alice Herrwegen, Köln, Akademie för uns kölsche Sproch (https://www.koelsch-akademie.de) und Dieter Krauthausen, Köln (https://www.tonstudio-krauthausen.de) 
+  * Plattdeutsch: Heinz Harms, Hollenstedt, För Platt e. V. (http://www.foer-platt.de)
   * Russisch: Karen Reitz-Koncebovski, Potsdam
   * Ukrainisch: Tania Kosenkova, Potsdam
 * Die Praxiserprobungen haben unterstützt:

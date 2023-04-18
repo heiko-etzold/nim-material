@@ -1,0 +1,30 @@
+div.task {
+  background: #FBE3CD;
+  padding: 10pt 10pt 1pt 15pt;
+  margin: 0 0 5pt 0;
+}
+
+div.hint {
+  background: #eeeeee;
+  padding: 10pt 10pt 1pt 15pt;
+  margin: 0 0 5pt 0;
+
+}
+
+.csl-entry {
+    text-indent: -10pt;
+    padding-left: 10pt;
+	margin-bottom: 5pt;
+}
+
+img[alt$=">"] {
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
+
+pre.numberSource code > span > a:first-child::before {
+  left: -0.3em;
+}

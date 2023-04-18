@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de-DE" xml:lang="de-DE">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Didaktische Empfehlungen | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</title>
+  <meta name="description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Didaktische Empfehlungen | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="github-repo" content="heiko-etzold/nim-material/tree/de.1.1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Didaktische Empfehlungen | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  
+  <meta name="twitter:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  
+
+<meta name="author" content="Heiko Etzold, Günter Krauthausen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="das-nim-spiel.html"/>
+<link rel="next" href="die-nim-app.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="own.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html"><b>Nim-Handreichung</b></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Einleitung</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#über-diese-handreichung"><i class="fa fa-check"></i>Über diese Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lizenz-und-versionen-dieser-handreichung"><i class="fa fa-check"></i>Lizenz und Versionen dieser Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dankeschön"><i class="fa fa-check"></i>Dankeschön</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html"><i class="fa fa-check"></i><b>1</b> Das Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#spielregeln"><i class="fa fa-check"></i><b>1.1</b> Spielregeln</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#klassische-spielregeln"><i class="fa fa-check"></i><b>1.1.1</b> Klassische Spielregeln</a></li>
+<li class="chapter" data-level="1.1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#hinweise"><i class="fa fa-check"></i><b>1.1.2</b> Hinweise</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#typische-phasen-im-spielverlauf"><i class="fa fa-check"></i><b>1.2</b> Typische Phasen im Spielverlauf</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#freies-spielen"><i class="fa fa-check"></i><b>1.2.1</b> Freies Spielen</a></li>
+<li class="chapter" data-level="1.2.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#erste-vermutungen"><i class="fa fa-check"></i><b>1.2.2</b> Erste Vermutungen</a></li>
+<li class="chapter" data-level="1.2.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gezieltere-analyse"><i class="fa fa-check"></i><b>1.2.3</b> Gezieltere Analyse</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gewinnstrategie"><i class="fa fa-check"></i><b>1.3</b> Gewinnstrategie</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#ausgangsparameter"><i class="fa fa-check"></i><b>1.3.1</b> Ausgangsparameter</a></li>
+<li class="chapter" data-level="1.3.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-feldlaenge"><i class="fa fa-check"></i><b>1.3.2</b> Variation der Feldlänge</a></li>
+<li class="chapter" data-level="1.3.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variationen-status-letztes-feld"><i class="fa fa-check"></i><b>1.3.3</b> Variationen Status letztes Feld</a></li>
+<li class="chapter" data-level="1.3.4" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-legezahl"><i class="fa fa-check"></i><b>1.3.4</b> Variation der Legezahl</a></li>
+<li class="chapter" data-level="1.3.5" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#sehr-große-feldlängen-und-legezahlen"><i class="fa fa-check"></i><b>1.3.5</b> Sehr große Feldlängen und Legezahlen</a></li>
+<li class="chapter" data-level="1.3.6" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#allgemeine-gewinnstrategie"><i class="fa fa-check"></i><b>1.3.6</b> Allgemeine Gewinnstrategie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html"><i class="fa fa-check"></i><b>2</b> Didaktische Empfehlungen</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#material-einführung"><i class="fa fa-check"></i><b>2.1</b> Material &amp; Einführung</a></li>
+<li class="chapter" data-level="2.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#behutsame-fokussierung"><i class="fa fa-check"></i><b>2.2</b> Behutsame Fokussierung</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-a"><i class="fa fa-check"></i>Variante A</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-b"><i class="fa fa-check"></i>Variante B</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#risiko"><i class="fa fa-check"></i><b>2.3</b> Risiko …!</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#herausfordern"><i class="fa fa-check"></i>Herausfordern</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#motivieren"><i class="fa fa-check"></i>Motivieren</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#souverän-bleiben"><i class="fa fa-check"></i>»Souverän« bleiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#vorschnell-vermeintlich-am-ziel"><i class="fa fa-check"></i><b>2.4</b> Vorschnell vermeintlich am Ziel</a></li>
+<li class="chapter" data-level="2.5" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-dokumentation"><i class="fa fa-check"></i><b>2.5</b> Rolle der Dokumentation</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#überblick-behalten"><i class="fa fa-check"></i><b>2.5.1</b> Überblick behalten</a></li>
+<li class="chapter" data-level="2.5.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#hypothesen-prüfung"><i class="fa fa-check"></i><b>2.5.2</b> Hypothesen-Prüfung</a></li>
+<li class="chapter" data-level="2.5.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen"><i class="fa fa-check"></i><b>2.5.3</b> Pool an Spielverläufen</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-sprache"><i class="fa fa-check"></i><b>2.6</b> Rolle der Sprache</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="die-nim-app.html"><a href="die-nim-app.html"><i class="fa fa-check"></i><b>3</b> Die Nim-App</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#einstellungen-innerhalb-der-app"><i class="fa fa-check"></i><b>3.1</b> Einstellungen innerhalb der App</a></li>
+<li class="chapter" data-level="3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#spielen"><i class="fa fa-check"></i><b>3.2</b> Spielen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="die-nim-app.html"><a href="die-nim-app.html#notizen-machen"><i class="fa fa-check"></i><b>3.2.1</b> Notizen machen</a></li>
+<li class="chapter" data-level="3.2.2" data-path="die-nim-app.html"><a href="die-nim-app.html#doppelt-spielen"><i class="fa fa-check"></i><b>3.2.2</b> Doppelt spielen</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#archivieren-und-untersuchen"><i class="fa fa-check"></i><b>3.3</b> Archivieren und Untersuchen</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#sinnvolles-sortieren"><i class="fa fa-check"></i><b>3.3.1</b> Sinnvolles Sortieren</a></li>
+<li class="chapter" data-level="3.3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#archive-aus-klasse-sammeln"><i class="fa fa-check"></i><b>3.3.2</b> Archive aus Klasse sammeln</a></li>
+<li class="chapter" data-level="3.3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#spiele-zum-analysieren-vorgeben"><i class="fa fa-check"></i><b>3.3.3</b> Spiele zum Analysieren vorgeben</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="die-nim-app.html"><a href="die-nim-app.html#globale-einstellungen"><i class="fa fa-check"></i><b>3.4</b> Globale Einstellungen</a></li>
+<li class="chapter" data-level="3.5" data-path="die-nim-app.html"><a href="die-nim-app.html#bedienungshilfen"><i class="fa fa-check"></i><b>3.5</b> Bedienungshilfen</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="die-nim-app.html"><a href="die-nim-app.html#farben-und-kontraste"><i class="fa fa-check"></i><b>3.5.1</b> Farben und Kontraste</a></li>
+<li class="chapter" data-level="3.5.2" data-path="die-nim-app.html"><a href="die-nim-app.html#schriftgröße"><i class="fa fa-check"></i><b>3.5.2</b> Schriftgröße</a></li>
+<li class="chapter" data-level="3.5.3" data-path="die-nim-app.html"><a href="die-nim-app.html#texte-vorlesen"><i class="fa fa-check"></i><b>3.5.3</b> Texte vorlesen</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Anhang</b></span></li>
+<li class="chapter" data-level="A" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html"><i class="fa fa-check"></i><b>A</b> Hintergründe zum Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#das-strategiespiel-nim"><i class="fa fa-check"></i><b>A.1</b> Das Strategiespiel Nim</a></li>
+<li class="chapter" data-level="A.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#spielregeln-des-nim-spiel"><i class="fa fa-check"></i><b>A.2</b> Spielregeln des Nim-Spiel</a></li>
+<li class="chapter" data-level="A.3" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#woher-stammt-das-nim-spiel"><i class="fa fa-check"></i><b>A.3</b> Woher stammt das Nim-Spiel?</a></li>
+<li class="chapter" data-level="A.4" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#die-erste-nim-app"><i class="fa fa-check"></i><b>A.4</b> Die erste Nim-»App«</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#der-nimrod"><i class="fa fa-check"></i><b>A.4.1</b> Der Nimrod</a></li>
+<li class="chapter" data-level="A.4.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#aufbau-und-funktionsweise"><i class="fa fa-check"></i><b>A.4.2</b> Aufbau und Funktionsweise</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html"><i class="fa fa-check"></i><b>B</b> Technischer Hintergrund zur App</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#quellcode"><i class="fa fa-check"></i><b>B.1</b> Quellcode</a></li>
+<li class="chapter" data-level="B.2" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#versionsverlauf"><i class="fa fa-check"></i><b>B.2</b> Versionsverlauf</a>
+<ul>
+<li class="chapter" data-level="" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#änderungen-in-version-1.1"><i class="fa fa-check"></i>Änderungen in Version 1.1</a></li>
+</ul></li>
+<li class="chapter" data-level="B.3" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#uebersetzungen"><i class="fa fa-check"></i><b>B.3</b> Übersetzungen</a></li>
+<li class="chapter" data-level="B.4" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#datenschutz-und-archiv-dateien"><i class="fa fa-check"></i><b>B.4</b> Datenschutz und Archiv-Dateien</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>C</b> Literatur</a></li>
+<li class="divider"></li>
+<li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="pictures/by-sa.png" height="20px"/></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="didaktische-empfehlungen" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Didaktische Empfehlungen<a href="didaktische-empfehlungen.html#didaktische-empfehlungen" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="material-einführung" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Material &amp; Einführung<a href="didaktische-empfehlungen.html#material-einführung" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Zur Einführung des Spiels empfiehlt sich die Variante mit Feldlänge 10 (oder 15) mit einer überschaubaren maximalen Legezahl von zwei Plättchen (siehe Abschnitt <a href="das-nim-spiel.html#ausgangsparameter">1.3.1</a>).
+Der Grund ist ein pragmatischer:</p>
+<p>Bevor die Spielpartner <em>gezielt</em> nach einer Gewinnstrategie suchen, also während des noch freien Experimentierens, ist das Ereignis-Fenster zwischen Spiel-Eröffnung und dem Erkennen der vorletzten Gewinnposition <em>wenig ergiebig</em>.
+Das Augenmerk kann erst in späteren Phasen hierauf gerichtet werden, wenn zunehmend mehr Bewusstheit und Zielorientierung ins Spiel kommen wird.
+Daher sollten die <strong>anfänglichen Spieldurchgänge nicht zu viel Zeit</strong> durch zu lange Feldlängen absorbieren.
+Eine Feldlänge von 10 ermöglicht auch eher einen gewissen Überblick sowie Erinnerungsleistungen (»Eben hatte ich doch auch schon mal die 4 …!«).</p>
+<p>Es hat sich immer wieder bewährt, das Spiel zunächst einmal entweder mit einem Kind vor der ganzen Klasse vorzuspielen, oder als Lehrperson alleine gegen die ganze Klasse, was einen zusätzlichen Motivationseffekt mit sich bringen kann, weil die Lehrperson ja in Kenntnis der Strategie erwartbar gewinnen wird.</p>
+<p>Man kann dazu ein Stück Tapetenbahn mit aufgezeichnetem Spielfeld nutzen, um tatsächlich mit haptischen, analogen Erfahrungen zu beginnen (abgesehen vom unten beschriebenen Vorteil …).
+Damit alle Kinder die Spielregel lernen und verinnerlichen, müssen sie zunächst einige »Probespiele« erleben.
+Die Lehrerin kann dazu gegen das eine oder andere Kind spielen oder wie gesagt gegen die ganze Klasse – in der Frontalphase für alle sichtbar, damit sich die Spielregeln einprägen können.</p>
+</div>
+<div id="behutsame-fokussierung" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Behutsame Fokussierung<a href="didaktische-empfehlungen.html#behutsame-fokussierung" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Im Hinblick auf das mittelfristige Unterrichtsziel, eine Gewinnstrategie herauszufinden, gibt es dann <strong>zwei prinzipielle Vorgehensweisen</strong>.
+Beiden gemeinsam ist, dass die Kinder nach der Frontalphase und nachdem die Spielregeln verstanden sind, zu zweit auf eigenen Spielplänen spielen.
+Für beide Varianten gibt es pro &amp; contra-Argumente.</p>
+<div id="variante-a" class="section level3 unnumbered hasAnchor">
+<h3>Variante A<a href="didaktische-empfehlungen.html#variante-a" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Man lässt die Kinder im freien Spiel agieren, solange bis erste Beobachtungen formuliert werden (etwa dass die 7 eine wichtige Rolle spielt). Alsdann erfolgt (mithilfe entsprechender Impulse) entweder eine Ermunterung, noch mehr zu entdecken, oder es wird (erst dann) verraten, dass es eine Gewinnstrategie gibt, die es nun zu entdecken gilt.</em></p>
+<p>Bei diesem Vorgehen wird viel Wert auf das sog. <strong>freie Spiel</strong> gelegt, ein wichtiges pädagogisches Argument u. a. aus der Spieltheorie.
+Oft beobachtete Nachteile: Es kann u. U. recht lange dauern, bis die erwarteten Effekte des Stutzens und der ersten Vermutungen eintreten.
+Derweil spielen die Kinder nicht selten recht oberflächlich und planlos, legen die Plättchen hektisch auf das Spielfeld und achten vorrangig auf die Spielstände (»Wer hat wie oft gewonnen?«) – was ja im Hinblick auf das Ziel der Einheit eigentlich völlig nebensächlich ist.
+Dennoch kostet diese Phase unweigerlich Konzentration, die dann hinterher für die fokussierte Auseinandersetzung mit dem eigentlichen Kern der Sache fehlt.
+Gerade in den ersten Grundschulklassen kann dies die Kinder schnell an ihre Grenzen führen.</p>
+</div>
+<div id="variante-b" class="section level3 unnumbered hasAnchor">
+<h3>Variante B<a href="didaktische-empfehlungen.html#variante-b" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Bevor die Kinder in die Partnerarbeit gehen, wird ihnen explizit mitgeteilt (Zielorientierung), dass es eine Gewinnstrategie gibt, die es nun zu suchen gilt.</em></p>
+<p>Diese Variante beginnt mit einer <strong>transparenten Zielorientierung</strong>. Das nimmt den Kindern nicht die konkreten Spielerfahrungen, denn auch in diesen Fällen zeigen sie in der Regel große Ausdauer (20 bis 30 Durchgänge sind keine Seltenheit).
+Und die ersten Versuche sind auch noch ähnlich planlos wie in der Variante A.</p>
+<p>Aber die <em>Wahrnehmungrichtung</em> ist bereits fokussiert: Die Kinder wissen, um was es anschließend gehen wird.
+Und so können sie selbst den Zeitpunkt bestimmen, wann eine bewusstere, zielorientierte Auseinandersetzung einsetzt.
+Weiterer Vorteil: Die Spiele haben weniger einen Wettkampf-Charakter, bei dem man gegeneinander spielt. Im Rahmen der Zielorientierung wird es gar als ausdrücklicher Auftrag formuliert, dass man <em>gemeinsam</em> nach der Gewinnstrategie fahnden soll.
+Dann spielt es eben auch für viele Kinder eine untergeordnete Rolle, ob es 6:2 oder 6:5 steht.</p>
+</div>
+</div>
+<div id="risiko" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Risiko …!<a href="didaktische-empfehlungen.html#risiko" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="herausfordern" class="section level3 unnumbered hasAnchor">
+<h3>Herausfordern<a href="didaktische-empfehlungen.html#herausfordern" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In eigenen Unterrichtserprobungen hat einer der Autoren stets so begonnen, dass er nach dem Erklären der Spielregel gegen die gesamte Klasse antrat.
+Im Hinblick auf den Motivationsaufbau zum Aufsuchen einer Gewinnstrategie ist es dabei hilfreich, wenn man diese <strong>Probespiele »gegen« die Klasse allesamt gewinnt</strong>.
+Denn dann wird das entweder den Kindern von alleine schon suspekt vorkommen, sodass sie einen »Trick« dahinter vermuten.
+Oder man kann bereits hier die plausible Zielorientierung liefern, indem man zugibt, einen Wissensvorsprung zu haben, den es aufzuklären gilt.</p>
+</div>
+<div id="motivieren" class="section level3 unnumbered hasAnchor">
+<h3>Motivieren<a href="didaktische-empfehlungen.html#motivieren" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Das wird viele Kinder motivieren, dieses Wissen ebenfalls zu erwerben, v. a. wenn man ihnen in Aussicht stellt, dass auch sie dann <strong>jedes Spiel gewinnen</strong> würden – vorausgesetzt natürlich, sie spielen es gegen jemanden, der die Strategie nicht kennt.</p>
+<p>Eine Lehrerin hat seinerzeit berichtet, dass sie danach Anrufe von zahlreichen Eltern erhalten habe, die darüber berichteten, dass die Kinder jeden, aber auch jeden, der ihnen zu Hause über den Weg laufen würde, zum Nim-Spiel aufforderten, um dann ihren »Trick« auszuspielen und sämtliche Erwachsene zu besiegen.
+Ein beeindruckendes Beispiel für den Motivationsfaktor <em>Könnens-Erfahrung</em>.</p>
+<p>Aber zurück zum möglichen Risiko: Als Lehrperson kennt man ja die Gewinnstrategie (mit 1 Plättchen beginnen und dann 4 und 7 anzielen), was soll da also schief gehen?
+Dass es vorkommt, dass die Kinder die Farben der Plättchen mit Ihnen tauschen wollen, kann man ja ganz souverän akzeptieren.
+Aber den Kindern wird es vermutlich auch bald auffallen, dass immer nur die <em>Lehrperson</em> beginnt.</p>
+</div>
+<div id="souverän-bleiben" class="section level3 unnumbered hasAnchor">
+<h3>»Souverän« bleiben<a href="didaktische-empfehlungen.html#souverän-bleiben" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Auch in dieser Situation kann man Souveränität ausstrahlen und »selbstverständlich« auch mal die Klasse beginnen lassen.
+Denn wenn die Kinder dann als erstes 2 Plättchen legen, ist einem ja die 4 und damit der Sieg wieder sicher.
+Beginnen die Kinder allerdings mit 1 Plättchen (Achtung: Gewinnposition!), dann ist die Feldlänge 10 i. A. <em>lang genug</em>, dass man entweder vielleicht doch noch die 4 erreichen kann, oder zumindest die 7.</p>
+<p>Aber gleichzeitig ist die Feldlänge 10 auch <em>so kurz</em>, dass das eben auch mal schief gehen kann und die Lehrperson verliert.
+In dem Fall ist sicher eine kleine »didaktische Schummelei« erlaubt: Die Lehrperson stutzt, zeigt sich irritiert und entschuldigt sich, »weil ich gerade etwas unkonzentriert war«.
+Weitere Probespiele mag man dann ja wieder gewinnen.</p>
+<p>Und selbst im <em>Worst Case</em>, dass die Kinder grundsätzlich und mit 1 Plättchen beginnen wollten, hat man damit noch lange nicht die Gewinnstrategie enttarnt, sondern nur einen ganz kleinen Teil.
+Das Risiko, damit zwischendurch doch immer mal wieder verlieren zu können, ist jedenfalls zu hoch und rechtfertigt auch nicht den Begriff der Gewinnstrategie, den man ja auch als solchen den Kindern transparent machen sollte.</p>
+</div>
+</div>
+<div id="vorschnell-vermeintlich-am-ziel" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Vorschnell vermeintlich am Ziel<a href="didaktische-empfehlungen.html#vorschnell-vermeintlich-am-ziel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Das siebte Feld als relevante Position erkannt zu haben, führt, ein häufig zu beobachtendes Phänomen, nicht selten zur (vorschnellen) Zufriedenheit.
+Man hält die Aufgabe für gelöst, die Gewinnstrategie für erkannt, was aber angesichts der eingangs genannten Definition des Begriffs »Gewinnstrategie« leider noch nicht der Fall ist.</p>
+<p>Wie aber motiviert man Kinder an dieser Stelle dazu, dennoch »dranzubleiben« und weiter zu denken?
+Die Rückmeldung »Das ist noch nicht alles« ist dazu weniger geeignet, weil sie das Augenmerk auf Defizite lenkt und wenig Mut macht. Ein erfahrungsgemäß wirksameres Vorgehen ist das folgende:</p>
+<p>Hier kommt der o. g. Spielplan in Form der angesprochenen Tapetenbahn wieder in den Blick:
+Für die Kinder ist es durchaus plausibel, die Bahn nach der Erkenntnis der Position 7 hinter dieser Position nach unten weg zu falten; schließlich ist ja bei der 7 »alles klar«.</p>
+<p>Der Frage »Wie kommt man denn auf die 7?« lässt sich nachgehen, indem bislang gewohnte Spiel-Erfahrungen weiter aktiviert werden; es bedarf keiner neuen Überlegungen.
+Auch Kinder mit Lernschwierigkeiten können hier wie zuvor mittun. Vergleichsweise schneller als zuvor bei der 7 können die Kinder auf der verkürzten Bahn die Bedeutung der Position 4 herausfinden.
+Und noch zügiger wird die 1 erkannt, wenn der Spielplan (nun nur noch als nonverbaler Impuls) hinter der 4 umgefaltet wird.</p>
+<p>Die wieder <em>entfaltete</em> Tapetenbahn zeigt dann die sichtbaren Knickfalzen (in der Funktion der Rahmen aus Abb. <a href="das-nim-spiel.html#fig:Gewinnstrategie15">1.4</a>) – sehr hilfreich für die anschließende Analysen.</p>
+</div>
+<div id="rolle-der-dokumentation" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Rolle der Dokumentation<a href="didaktische-empfehlungen.html#rolle-der-dokumentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="überblick-behalten" class="section level3 hasAnchor" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Überblick behalten<a href="didaktische-empfehlungen.html#überblick-behalten" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Um die Gewinnstrategie herauszufinden, bedarf es einer ganzen Reihe von Spieldurchgängen, denn »die Kinder müssen die Vielfalt der Spielzüge (Operationen) und der Spielpositionen erfassen, die Wirkung der Spielzüge hinsichtlich Gewinn oder Verlust bewerten und ihre eigenen Züge mit denen des Gegners koordinieren« <span class="citation">(<a href="literatur.html#ref-Wittmann1982" role="doc-biblioref">E. Wittmann, 1982, S. 82</a>)</span>.
+Es ist plausibel, dass insbesondere Grundschüler da schnell den Überblick verlieren.
+Aber auch Erwachsene wissen sehr schnell nicht mehr, ob sie diesen oder jenen Ansatz oder Zug nicht kurz zuvor so bereits einmal durchgespielt haben.</p>
+<p>Nun ist maximale Ökonomie des Spielens und höchste Effektivität der Zielerreichung gar nicht von primärem Interesse.
+Der spielerische Charakter fragt nicht primär nach dem kürzesten oder elegantesten Weg.
+Die Vermeidung »unnötiger« Wiederholungen oder Überschneidungen ist aber auch gar nicht das Argument für eine Dokumentation des Tuns.
+Ihr Wert zeigt sich im Prinzip erst in der folgenden Phase der gemeinsamen <em>Analyse von Hypothesen</em> (vgl. Abschnitt <a href="das-nim-spiel.html#typische-phasen-im-spielverlauf">1.2</a>).</p>
+</div>
+<div id="hypothesen-prüfung" class="section level3 hasAnchor" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Hypothesen-Prüfung<a href="didaktische-empfehlungen.html#hypothesen-prüfung" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Die gezieltere Suche nach der Gewinnstrategie führt immer wieder zu Vermutungen und Hypothesen, die überprüft sein wollen.
+Man kann das tun, indem man einen oder mehrere weitere Spieldurchgänge mit den entsprechenden Parametern durchführt, d. h. sich einige Beispielfälle generiert.
+Im Unterricht, wo nicht unbegrenzt Zeit zur Verfügung steht (abgesehen von der »Kondition« der Kinder), kann der Bedarf nach weiteren Spielen schon einmal kritisch werden.
+Alternativ hat sich das folgende Vorgehen bewährt.</p>
+</div>
+<div id="pool-an-spielverlaeufen" class="section level3 hasAnchor" number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span> Pool an Spielverläufen<a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In der Phase des freien Explorierens oder der gezielteren Erkundung, für die ca. 15 bis 20 Minuten kalkuliert werden könnten, also während der Partnerarbeitsphase, sollen beide Spielpartner eines oder zwei ihrer »Lieblingsspiele« (Spiele, bei denen sie gewonnen haben oder die sie sonst für bemerkenswert halten) auf einen vorbereiteten großen Spielplan eintragen.
+Dazu reicht es, die entsprechenden Felder des Spielplans durch rote bzw. blaue Kreuze oder Punkte zu markieren.
+Das kostet in dieser Phase keine nennenswerte Zeit.
+Wenn aber alle Spielerpaare so verfahren, dann liegt am Ende der Stunde ein Pool von ca. 30 bis 40 protokollierten Spieldurchläufen vor.
+Dieser kann dann als Grundlage für die genauere Analyse im Klassenverband dienen.</p>
+<p>Werden nun Vermutungen und Hypothesen geäußert – z. B. »Wer anfängt, gewinnt« – dann kann man anhand der gesammelten (und am besten sortierten) Spielverläufe recht gut überprüfen, ob man zunächst ein <em>Gegenbeispiel</em> findet – das wäre der einfachste Weg, um eine Vermutung zu <em>falsifizieren</em>.</p>
+<p>Ein Pool von 30 bis 40 Beispielen ist da schon ein relativ guter Ereignisraum. Die Vermutung »Wer anfängt, gewinnt« ließe sich etwa in der Übersicht aus Abb. <a href="didaktische-empfehlungen.html#fig:Dokumentation">2.1</a> (hier war die Spielfeldlänge 13 bei maximaler Legezahl 2) durch das dort zu findende 8. Spiel widerlegen.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Dokumentation"></span>
+<img src="pictures/Dokumentation.png" alt="Übersicht über dokumentierte Spielverläufe" width="75%" />
+<p class="caption">
+Abb. 2.1: Übersicht über dokumentierte Spielverläufe
+</p>
+</div>
+<p>Allerdings sollte man die Hypothese auch nicht vorschnell aussortieren, wenn es Beispiele gibt, wo sie zutrifft.
+Der näher zu untersuchende Grund dafür ist der, dass die genannte Hypothese zwar zutreffend ist, aber noch nicht die ganze Wahrheit enthält (<em>notwendig, aber nicht hinreichend</em>).</p>
+<p>Ein solches Tableau muss also aufmerksam interpretiert werden, damit keine Kurzschluss-Folgerungen geschehen.
+Auch »Wer die 4 legt, gewinnt« (an sich ja eine Gewinnposition) wird durch das 8. Spiel widerlegt.
+Aber eben nur, weil die Hypothese nur unter der Voraussetzung gilt, dass die Gewinnstrategie konsequent durchgehalten wird, was eben dort nicht zutrifft (die 7 wird hier verpasst, sodass der Spielpartner die 10, die vorletzte Gewinnposition, erreichen kann).</p>
+<p>Derartige Analysen und Überprüfungen können nur dann erfolgen, wenn vorherige Spielverläufe dokumentiert und leicht (um-)sortierbar vorliegen.
+Es würde jedes Gedächtnis überfordern, sich auch nur an die letzten wenigen Spielverläufe zu erinnern.
+Und wie will man dann mental vergleichen und diese Überlegungen dann auch für andere verständlich kommunizieren?
+Ein zwingendes Argument für eine <strong>adäquate Dokumentationspraxis</strong>!</p>
+</div>
+</div>
+<div id="rolle-der-sprache" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Rolle der Sprache<a href="didaktische-empfehlungen.html#rolle-der-sprache" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Es liegt auf der Hand, dass eine unterrichtliche Umsetzung des Nim-Spiels auch besonders geeignet ist, um allgemeine mathematische Kompetenzen wie das <em>Darstellen</em>, das <em>Kommunizieren</em>, das <em>Problemlösen</em> und das <em>Argumentieren</em> zu fördern – sowohl im Mündlichen als auch beim Verschriftlichen.</p>
+<p>Das Sprachgefühl und die aktuelle sprachliche Ausdrucksfähigkeit der Kinder ist noch in der Entwicklung, weshalb der Satz »Jede Mathematikstunde ist auch eine Deutschstunde« insofern relevant ist, als die sprachliche Ausdrucksfähigkeit der Kinder auch im Fachunterricht zu fördern und zu fordern ist (wobei die Sprache der Lehrerin eine <strong>Modellfunktion</strong> hat!).
+Eine besondere Aufgabe für eine Lehrperson besteht z. B. darin, die manchmal sehr verkürzten Satzfragmente der Kinder zunächst selbst zu verstehen und einordnen zu können, und dann auch für die ganze Klasse verständlich zu machen.
+Dieser Bedarf erklärt sich u. a. wie folgt:</p>
+<ul>
+<li><p>Kinder formulieren zunächst sehr subjektiv aus ihrer individuellen Sicht als »Wissende».</p>
+<p>Sie haben sich mit einem Sachverhalt befasst und dabei vielfältige Detail-Erfahrungen gemacht, die sie nun nicht mehr für erklärungsbedürftig oder erwähnenswert halten (weil sie ihnen klar sind). Dass Außenstehende mehr Redundanz, mehr Einzelheiten benötigen, um die Erklärungen zu verstehen, ist ihnen nicht bewusst.</p></li>
+<li><p>(Über-)Motivation und Engagement in der Sache führen auch häufig dazu, dass der Kopf schneller denkt als es der »Sprachausgabe« gelingt, hinterherzukommen.</p>
+<p>Aus einem dadurch entstehenden Wortschwall (in der Fachsprache »Poltern« genannt) kann aber nicht geschlossen werden, dass das Kind den Sachverhalt nicht verstanden hätte. Für Außenstehende aber mag es sich wie ein »verbales Chaos« anhören, dem man überhaupt nicht folgen, geschweige etwas verstehen kann.</p></li>
+<li><p>Auch bei Kindern kann man schon einmal »die allmähliche Verfertigung der Gedanken beim Reden« <span class="citation">(<a href="literatur.html#ref-Kleist1978" role="doc-biblioref">Kleist, 1978</a>)</span> beobachten.</p>
+<p>Auch wenn der Hinweis »Erst denken, dann reden« gewiss seine Berechtigung hat, so wird das Denken aber auch durch Reden (währenddessen) mitgeformt: Beim »Drauflosreden« ohne schon zu wissen, was man genau sagen und wo man hin will, formieren sich Gedanken, die Bewusstheit wächst und entwickelt den sprachlichen Ausdruck erst zu einer akzeptierten und verständlichen Form.</p></li>
+</ul>
+<p>Bei all dem ist entscheidend, Sprache im Rahmen von Erklärungen, Berichten, Begründungen und Argumentationszusammenhängen nicht einfach nur »geschehen« zu lassen, sondern sie immer wieder auch in den Bewusstseinshorizont der Kinder zu heben – nicht nur <em>mit und durch</em> Sprache kommunizieren, sondern auch <em>über</em> Sprache kommunizieren.
+Das ist mit <strong>aktiver Sprachförderung</strong> als eine durchgängige Aufgabe jedweden Unterrichts gemeint.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="das-nim-spiel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="die-nim-app.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/heiko-etzold/nim-material/blob/de.1.1/2-Didaktische-Empfehlungen.Rmd",
+"text": null
+},
+"download": ["Nim-Handreichung.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

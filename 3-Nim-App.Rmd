@@ -60,6 +60,12 @@ knitr::include_graphics("pictures/Spielbildschirm.png")
 knitr::include_graphics("pictures/Splitscreen.png")
 ```
 
+So ist es zum Beispiel auch möglich, im Archiv (siehe Abschnitt \@ref(archivieren-und-untersuchen)) einzelne Spiele zu den Notizen zu ziehen und diese dann dort als Bilder zur Verfügung zu haben.
+
+```{r SplitscreenScreenshot, echo=FALSE, fig.cap="Splitscreen mit Verschieben eines Spiels, um es als Bild zur Verfügung zu haben", fig.align='center', out.width='75%'}
+knitr::include_graphics("pictures/SplitscreenScreenshot.png")
+```
+
 
 ### Doppelt spielen
 
@@ -75,7 +81,7 @@ knitr::include_graphics("pictures/Doppelapp.png")
 
 Im Archiv werden alle gespeicherten Spiele dargestellt. 
 
-* Über **Drag-and-Drop-Gesen** können die **Archiveinträge umsortiert** werden. Bitte beachten Sie, dass es bei unterschiedlichen Feldlängen innerhalb des Archivs ggf. zu Verschiebungen in der Darstellung kommen kann. 
+* Über **Drag-and-Drop-Gesten** können die **Archiveinträge umsortiert** oder (wenn sie aus der App herausgezogen werden) **als Bilder exportiert** werden. Bitte beachten Sie, dass es bei unterschiedlichen Feldlängen innerhalb des Archivs ggf. zu Verschiebungen in der Darstellung kommen kann. 
 
 * Über den **Sortier-Button** oben rechts gibt es die Möglichkeit, die Spiele **der Länge nach**, **chronologisch** zu sortieren, beides **sowohl aufsteigend als auch absteigend**, oder bezüglich der **beginnenden Farbe**.
 
@@ -91,7 +97,7 @@ knitr::include_graphics("pictures/Export.png")
 
 * **Öffnet** man ein zuvor gespeichertes Archiv (z. B. über die Dateien-App), kann man dieses **zu seinem bisherigen Archiv hinzufügen** oder das **alte Archiv überschreiben**.
 
-* **Tippt** man im Archiv ein einzelnes Spiel an, erhält man die Möglichkeit, dieses nach einer Bestätigungsabfrage zu **löschen** oder **genauer zu untersuchen**. Im letzteren Fall wird dann das gespielte Spiel sowie ein weiteres Spiel mit zunächst denselben Einstellungen dargestellt. Die Einstellungen des zweiten Spiels sind nun variierbar, d. h. es kann parallel und vergleichend zum ursprünglich dargestellten Spiel gespielt werden.
+* **Tippt** man im Archiv ein einzelnes Spiel an, erhält man die Möglichkeit, dieses als Bild **in die Zwischenablage zu kopieren**, es **genauer zu untersuchen** oder es nach einer Bestätigungsabfrage zu **löschen**. Untersucht man es genauer, wird das gespielte Spiel sowie ein weiteres Spiel mit zunächst denselben Einstellungen dargestellt. Die Einstellungen des zweiten Spiels sind nun variierbar, d. h. es kann parallel und vergleichend zum ursprünglich dargestellten Spiel gespielt werden.
 
 ```{r Untersuchen, echo=FALSE, fig.cap="Untersuchen und Abwandeln eines bereits gespielten Spiels", fig.align='center', out.width='75%'}
 knitr::include_graphics("pictures/Untersuchen.png")
@@ -137,9 +143,11 @@ In den globalen App-Einstellungen (graue Zahnrad-App, anschließend nach unten s
   * Englisch
   * Französisch
   * Arabisch
+  * Isländisch
   * Ukrainisch
   * Russisch
   * Kölsch
+  * Plattdeutsch
   
   Üblicherweise wird im Spiel die Systemsprache des Gerätes verwendet. Wenn diese nicht vom Spiel unterstützt wird (z. B. Spanisch), dann wird im Spiel automatisch Englisch verwendet. Je nach Zusammensetzung Ihrer Klasse können so einzelne Schülerinnen und Schüler ggf. flexibel ihr Spiel anpassen.
   
