@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="de-DE" xml:lang="de-DE">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Die Nim-App | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</title>
+  <meta name="description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Die Nim-App | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  <meta name="github-repo" content="heiko-etzold/nim-material/tree/de.1.1.1" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Die Nim-App | Nim-Spiel – Handreichung für Lehrerinnen und Lehrer" />
+  
+  <meta name="twitter:description" content="Anleitungen und Hinweise zur Nutzung der Nim-App" />
+  
+
+<meta name="author" content="Heiko Etzold, Günter Krauthausen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="didaktische-empfehlungen.html"/>
+<link rel="next" href="hintergründe-zum-nim-spiel.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="own.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html"><b>Nim-Handreichung</b></a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Einleitung</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#über-diese-handreichung"><i class="fa fa-check"></i>Über diese Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#lizenz-und-versionen-dieser-handreichung"><i class="fa fa-check"></i>Lizenz und Versionen dieser Handreichung</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dankeschön"><i class="fa fa-check"></i>Dankeschön</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html"><i class="fa fa-check"></i><b>1</b> Das Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#spielregeln"><i class="fa fa-check"></i><b>1.1</b> Spielregeln</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#klassische-spielregeln"><i class="fa fa-check"></i><b>1.1.1</b> Klassische Spielregeln</a></li>
+<li class="chapter" data-level="1.1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#hinweise"><i class="fa fa-check"></i><b>1.1.2</b> Hinweise</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#typische-phasen-im-spielverlauf"><i class="fa fa-check"></i><b>1.2</b> Typische Phasen im Spielverlauf</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#freies-spielen"><i class="fa fa-check"></i><b>1.2.1</b> Freies Spielen</a></li>
+<li class="chapter" data-level="1.2.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#erste-vermutungen"><i class="fa fa-check"></i><b>1.2.2</b> Erste Vermutungen</a></li>
+<li class="chapter" data-level="1.2.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gezieltere-analyse"><i class="fa fa-check"></i><b>1.2.3</b> Gezieltere Analyse</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#gewinnstrategie"><i class="fa fa-check"></i><b>1.3</b> Gewinnstrategie</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#ausgangsparameter"><i class="fa fa-check"></i><b>1.3.1</b> Ausgangsparameter</a></li>
+<li class="chapter" data-level="1.3.2" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-feldlaenge"><i class="fa fa-check"></i><b>1.3.2</b> Variation der Feldlänge</a></li>
+<li class="chapter" data-level="1.3.3" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variationen-status-letztes-feld"><i class="fa fa-check"></i><b>1.3.3</b> Variationen Status letztes Feld</a></li>
+<li class="chapter" data-level="1.3.4" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#variation-der-legezahl"><i class="fa fa-check"></i><b>1.3.4</b> Variation der Legezahl</a></li>
+<li class="chapter" data-level="1.3.5" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#sehr-große-feldlängen-und-legezahlen"><i class="fa fa-check"></i><b>1.3.5</b> Sehr große Feldlängen und Legezahlen</a></li>
+<li class="chapter" data-level="1.3.6" data-path="das-nim-spiel.html"><a href="das-nim-spiel.html#allgemeine-gewinnstrategie"><i class="fa fa-check"></i><b>1.3.6</b> Allgemeine Gewinnstrategie</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html"><i class="fa fa-check"></i><b>2</b> Didaktische Empfehlungen</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#material-einführung"><i class="fa fa-check"></i><b>2.1</b> Material &amp; Einführung</a></li>
+<li class="chapter" data-level="2.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#behutsame-fokussierung"><i class="fa fa-check"></i><b>2.2</b> Behutsame Fokussierung</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-a"><i class="fa fa-check"></i>Variante A</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#variante-b"><i class="fa fa-check"></i>Variante B</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#risiko"><i class="fa fa-check"></i><b>2.3</b> Risiko …!</a>
+<ul>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#herausfordern"><i class="fa fa-check"></i>Herausfordern</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#motivieren"><i class="fa fa-check"></i>Motivieren</a></li>
+<li class="chapter" data-level="" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#souverän-bleiben"><i class="fa fa-check"></i>»Souverän« bleiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#vorschnell-vermeintlich-am-ziel"><i class="fa fa-check"></i><b>2.4</b> Vorschnell vermeintlich am Ziel</a></li>
+<li class="chapter" data-level="2.5" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-dokumentation"><i class="fa fa-check"></i><b>2.5</b> Rolle der Dokumentation</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#überblick-behalten"><i class="fa fa-check"></i><b>2.5.1</b> Überblick behalten</a></li>
+<li class="chapter" data-level="2.5.2" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#hypothesen-prüfung"><i class="fa fa-check"></i><b>2.5.2</b> Hypothesen-Prüfung</a></li>
+<li class="chapter" data-level="2.5.3" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen"><i class="fa fa-check"></i><b>2.5.3</b> Pool an Spielverläufen</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="didaktische-empfehlungen.html"><a href="didaktische-empfehlungen.html#rolle-der-sprache"><i class="fa fa-check"></i><b>2.6</b> Rolle der Sprache</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="die-nim-app.html"><a href="die-nim-app.html"><i class="fa fa-check"></i><b>3</b> Die Nim-App</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#einstellungen-innerhalb-der-app"><i class="fa fa-check"></i><b>3.1</b> Einstellungen innerhalb der App</a></li>
+<li class="chapter" data-level="3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#spielen"><i class="fa fa-check"></i><b>3.2</b> Spielen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="die-nim-app.html"><a href="die-nim-app.html#notizen-machen"><i class="fa fa-check"></i><b>3.2.1</b> Notizen machen</a></li>
+<li class="chapter" data-level="3.2.2" data-path="die-nim-app.html"><a href="die-nim-app.html#doppelt-spielen"><i class="fa fa-check"></i><b>3.2.2</b> Doppelt spielen</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#archivieren-und-untersuchen"><i class="fa fa-check"></i><b>3.3</b> Archivieren und Untersuchen</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="die-nim-app.html"><a href="die-nim-app.html#sinnvolles-sortieren"><i class="fa fa-check"></i><b>3.3.1</b> Sinnvolles Sortieren</a></li>
+<li class="chapter" data-level="3.3.2" data-path="die-nim-app.html"><a href="die-nim-app.html#archive-aus-klasse-sammeln"><i class="fa fa-check"></i><b>3.3.2</b> Archive aus Klasse sammeln</a></li>
+<li class="chapter" data-level="3.3.3" data-path="die-nim-app.html"><a href="die-nim-app.html#spiele-zum-analysieren-vorgeben"><i class="fa fa-check"></i><b>3.3.3</b> Spiele zum Analysieren vorgeben</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="die-nim-app.html"><a href="die-nim-app.html#globale-einstellungen"><i class="fa fa-check"></i><b>3.4</b> Globale Einstellungen</a></li>
+<li class="chapter" data-level="3.5" data-path="die-nim-app.html"><a href="die-nim-app.html#bedienungshilfen"><i class="fa fa-check"></i><b>3.5</b> Bedienungshilfen</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="die-nim-app.html"><a href="die-nim-app.html#farben-und-kontraste"><i class="fa fa-check"></i><b>3.5.1</b> Farben und Kontraste</a></li>
+<li class="chapter" data-level="3.5.2" data-path="die-nim-app.html"><a href="die-nim-app.html#schriftgröße"><i class="fa fa-check"></i><b>3.5.2</b> Schriftgröße</a></li>
+<li class="chapter" data-level="3.5.3" data-path="die-nim-app.html"><a href="die-nim-app.html#texte-vorlesen"><i class="fa fa-check"></i><b>3.5.3</b> Texte vorlesen</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Anhang</b></span></li>
+<li class="chapter" data-level="A" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html"><i class="fa fa-check"></i><b>A</b> Hintergründe zum Nim-Spiel</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#das-strategiespiel-nim"><i class="fa fa-check"></i><b>A.1</b> Das Strategiespiel Nim</a></li>
+<li class="chapter" data-level="A.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#spielregeln-des-nim-spiel"><i class="fa fa-check"></i><b>A.2</b> Spielregeln des Nim-Spiel</a></li>
+<li class="chapter" data-level="A.3" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#woher-stammt-das-nim-spiel"><i class="fa fa-check"></i><b>A.3</b> Woher stammt das Nim-Spiel?</a></li>
+<li class="chapter" data-level="A.4" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#die-erste-nim-app"><i class="fa fa-check"></i><b>A.4</b> Die erste Nim-»App«</a>
+<ul>
+<li class="chapter" data-level="A.4.1" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#der-nimrod"><i class="fa fa-check"></i><b>A.4.1</b> Der Nimrod</a></li>
+<li class="chapter" data-level="A.4.2" data-path="hintergründe-zum-nim-spiel.html"><a href="hintergründe-zum-nim-spiel.html#aufbau-und-funktionsweise"><i class="fa fa-check"></i><b>A.4.2</b> Aufbau und Funktionsweise</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html"><i class="fa fa-check"></i><b>B</b> Technischer Hintergrund zur App</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#quellcode"><i class="fa fa-check"></i><b>B.1</b> Quellcode</a></li>
+<li class="chapter" data-level="B.2" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#versionsverlauf"><i class="fa fa-check"></i><b>B.2</b> Versionsverlauf</a>
+<ul>
+<li class="chapter" data-level="" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#änderungen-in-version-1.1"><i class="fa fa-check"></i>Änderungen in Version 1.1</a></li>
+<li class="chapter" data-level="" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#änderungen-in-version-1.1.1"><i class="fa fa-check"></i>Änderungen in Version 1.1.1</a></li>
+</ul></li>
+<li class="chapter" data-level="B.3" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#uebersetzungen"><i class="fa fa-check"></i><b>B.3</b> Übersetzungen</a></li>
+<li class="chapter" data-level="B.4" data-path="technischer-hintergrund-zur-app.html"><a href="technischer-hintergrund-zur-app.html#datenschutz-und-archiv-dateien"><i class="fa fa-check"></i><b>B.4</b> Datenschutz und Archiv-Dateien</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>C</b> Literatur</a></li>
+<li class="divider"></li>
+<li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="pictures/by-sa.png" height="20px"/></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nim-Spiel – Handreichung für Lehrerinnen und Lehrer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="die-nim-app" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Die Nim-App<a href="die-nim-app.html#die-nim-app" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Die Nim-App besteht aus bis zu vier Navigationsebenen:</p>
+<ol style="list-style-type: decimal">
+<li>Zunächst werden <strong>Einstellungen</strong> zum Spiel vorgenommen.</li>
+<li>Anschließend kann <strong>gespielt</strong> werden.</li>
+<li>Die Spiele können in einem <strong>Archiv</strong> gesammelt werden, das verschiedene Sortier- und Speicheroptionen zulässt.</li>
+<li>Außerdem ist möglich, einzelne Spiele aus dem Archiv heraus zu <strong>untersuchen</strong>.</li>
+</ol>
+<p>Dabei ist jede Navigationsebene so gestaltet, dass sie möglichst <strong>einfach und übersichtlich</strong> auf dem Bildschirm dargestellt wird. Wenn das Display zu klein ist, muss ggf. von oben nach unten gescrollt werden.</p>
+<div id="einstellungen-innerhalb-der-app" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Einstellungen innerhalb der App<a href="die-nim-app.html#einstellungen-innerhalb-der-app" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Wenn die App gestartet wird, zeigt sich ein Bildschirm mit diversen Einstellungsmöglichkeiten für das Nim-Spiel.
+Folgende Werte können variiert werden:</p>
+<ul>
+<li><strong>Spielfeldlänge</strong> von 5 bis 20</li>
+<li><strong>Legezahl</strong> von 1 bis 4</li>
+<li><strong>letztes Feld</strong> gewinnt oder verliert</li>
+</ul>
+<p>Diese Begrenzungen wurden bewusst implementiert.
+Die App als solche soll keine »vollständige Simulation« bis hin zur Verallgemeinerung liefern, sondern eine Experimentierumgebung anbieten, deren Erfahrungen in didaktischen Kontexten zum weiteren (auch nicht-digitalen) Problemlösen und zu allgemeineren Begründungen anregen sollen.</p>
+<p>Darüber hinaus können die <strong>Namen</strong> und <strong>Farben</strong> der beiden Spieler/-innen angepasst werden.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Einstellungen"></span>
+<img src="pictures/Einstellungen.png" alt="Einstellungsbildschirm der Nim-App" width="75%" />
+<p class="caption">
+Abb. 3.1: Einstellungsbildschirm der Nim-App
+</p>
+</div>
+<p>Am unteren Bildschirmrand gibt es noch die Möglichkeit, jederzeit die <strong>Nummerierung der Felder</strong> anzupassen: entweder gar keine, jedes fünfte Feld oder alle Felder.
+Diese Einstellung kann auch in der globalen Einstellungsapp vorgenommen bzw. geändert werden (siehe Abschnitt <a href="die-nim-app.html#globale-einstellungen">3.4</a>).</p>
+<p>Sobald alle gewünschten Einstellungen vorgenommen wurden, kann das Spiel über den <strong>Start</strong>-Knopf oben rechts begonnen werden.</p>
+</div>
+<div id="spielen" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Spielen<a href="die-nim-app.html#spielen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Bevor das erste Plättchen positioniert wird, muss über die <strong>farbigen Buttons</strong> ausgewählt werden, wer beginnt.</p>
+<p>Anschließend kann die maximale Anzahl an Plättchen über das <strong>Antippen der entsprechenden Felder</strong> gelegt werden.
+Die App gibt dabei <strong>Rückmeldungen</strong>, falls versucht werden sollte, zu viele Plättchen oder diese nicht in der richtigen Reihenfolge zu legen.</p>
+<p>Sobald ein Spieler seinen Zug beenden will, betätigt er seinen Fertig-Button und der andere Spieler ist dran.</p>
+<p>Mit dem Ausfüllen des letzten Feldes erfolgt eine Rückmeldung, welcher Spieler gewonnen hat.
+Anschließend kann das Spiel ins <strong>Archiv bewegt</strong> werden oder man startet jederzeit, ohne Archiv, ein <strong>neues Spiel</strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Spielbildschirm"></span>
+<img src="pictures/Spielbildschirm.png" alt="Spiel-Bildschirm der Nim-App" width="75%" />
+<p class="caption">
+Abb. 3.2: Spiel-Bildschirm der Nim-App
+</p>
+</div>
+<div id="notizen-machen" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Notizen machen<a href="die-nim-app.html#notizen-machen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Über die Multitasking-Funktion des iPads (siehe <a href="https://support.apple.com/de-de/HT207582" class="uri">https://support.apple.com/de-de/HT207582</a>) ist es möglich, neben der Nim-App auch eine weitere App zu öffnen, die Multitasking unterstützt. So kann etwa die Notizen-App daneben gelegt werden, um Vermutungen hinsichtlich der Spielstrategie zu notieren.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Splitscreen"></span>
+<img src="pictures/Splitscreen.png" alt="Splitscreen mit der Notizen-App" width="90%" />
+<p class="caption">
+Abb. 3.3: Splitscreen mit der Notizen-App
+</p>
+</div>
+<p>So ist es zum Beispiel auch möglich, im Archiv (siehe Abschnitt <a href="die-nim-app.html#archivieren-und-untersuchen">3.3</a>) einzelne Spiele zu den Notizen zu ziehen und diese dann dort als Bilder zur Verfügung zu haben.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SplitscreenScreenshot"></span>
+<img src="pictures/SplitscreenScreenshot.png" alt="Splitscreen mit Verschieben eines Spiels, um es als Bild zur Verfügung zu haben" width="75%" />
+<p class="caption">
+Abb. 3.4: Splitscreen mit Verschieben eines Spiels, um es als Bild zur Verfügung zu haben
+</p>
+</div>
+</div>
+<div id="doppelt-spielen" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Doppelt spielen<a href="die-nim-app.html#doppelt-spielen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Die Multitasking-Funktion ist ebenfalls geeignet, um die Nim-App selbst zweimal nebeneinander geöffnet zu haben, wenn etwa das Spiel mit verschiedenen Parametern vergleichend durchgeführt werden soll.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Doppelapp"></span>
+<img src="pictures/Doppelapp.png" alt="Splitscreen mit der Nim-App selbst" width="75%" />
+<p class="caption">
+Abb. 3.5: Splitscreen mit der Nim-App selbst
+</p>
+</div>
+</div>
+</div>
+<div id="archivieren-und-untersuchen" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Archivieren und Untersuchen<a href="die-nim-app.html#archivieren-und-untersuchen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Im Archiv werden alle gespeicherten Spiele dargestellt.</p>
+<ul>
+<li><p>Über <strong>Drag-and-Drop-Gesten</strong> können die <strong>Archiveinträge umsortiert</strong> oder (wenn sie aus der App herausgezogen werden) <strong>als Bilder exportiert</strong> werden. Bitte beachten Sie, dass es bei unterschiedlichen Feldlängen innerhalb des Archivs ggf. zu Verschiebungen in der Darstellung kommen kann.</p></li>
+<li><p>Über den <strong>Sortier-Button</strong> oben rechts gibt es die Möglichkeit, die Spiele <strong>der Länge nach</strong>, <strong>chronologisch</strong> zu sortieren, beides <strong>sowohl aufsteigend als auch absteigend</strong>, oder bezüglich der <strong>beginnenden Farbe</strong>.</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Sortieren"></span>
+<img src="pictures/Sortieren.png" alt="Sortiermöglichkeiten im Archiv" width="75%" />
+<p class="caption">
+Abb. 3.6: Sortiermöglichkeiten im Archiv
+</p>
+</div>
+<ul>
+<li>Das Archiv kann auch vollständig oder in einer Auswahl <strong>exportiert</strong> bzw. als <strong>pdf-Datei</strong> ausgedruckt/gespeichert/geteilt werden. Hierfür stehen die Buttons am unteren rechten Rand zur Verfügung. Die pdf-Datei wird dabei in schwarz-weiß dargestellt.</li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Export"></span>
+<img src="pictures/Export.png" alt="Export der pdf-Datei" width="75%" />
+<p class="caption">
+Abb. 3.7: Export der pdf-Datei
+</p>
+</div>
+<ul>
+<li><p><strong>Öffnet</strong> man ein zuvor gespeichertes Archiv (z. B. über die Dateien-App), kann man dieses <strong>zu seinem bisherigen Archiv hinzufügen</strong> oder das <strong>alte Archiv überschreiben</strong>.</p></li>
+<li><p><strong>Tippt</strong> man im Archiv ein einzelnes Spiel an, erhält man die Möglichkeit, dieses als Bild <strong>in die Zwischenablage zu kopieren</strong>, es <strong>genauer zu untersuchen</strong> oder es nach einer Bestätigungsabfrage zu <strong>löschen</strong>. Untersucht man es genauer, wird das gespielte Spiel sowie ein weiteres Spiel mit zunächst denselben Einstellungen dargestellt. Die Einstellungen des zweiten Spiels sind nun variierbar, d. h. es kann parallel und vergleichend zum ursprünglich dargestellten Spiel gespielt werden.</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Untersuchen"></span>
+<img src="pictures/Untersuchen.png" alt="Untersuchen und Abwandeln eines bereits gespielten Spiels" width="75%" />
+<p class="caption">
+Abb. 3.8: Untersuchen und Abwandeln eines bereits gespielten Spiels
+</p>
+</div>
+<ul>
+<li>Über den <strong>Papierkorb-Button</strong> unten links kann das <strong>vollständige Archiv gelöscht</strong> werden (ebenfalls mit vorheriger Bestätigungsabfrage).</li>
+</ul>
+<p>Für den Unterricht ergeben sich aus diesen Bedienmöglichkeiten einige ertragreiche Szenarien:</p>
+<div id="sinnvolles-sortieren" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Sinnvolles Sortieren<a href="die-nim-app.html#sinnvolles-sortieren" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Wie bereits in Abschnitt <a href="didaktische-empfehlungen.html#pool-an-spielverlaeufen">2.5.3</a> erläutert, ist es für eine geziele Analyse und das Finden der Gewinnstrategie notwendig, eine <em>adäquate Dokumentationspraxis</em> zu schulen.
+Die App unterstützt dies dahingehend, dass die Spiele immer entsprechend der zu betrachtenden Parameter (»Wer fing an?«, »Wie viele Plättchen durfte man legen?«, …) umsortiert werden können.
+Auch in der pdf-Datei wird die jeweils aktuelle Sortierung dargestellt, sodass eine Analyse ggf. auch »offline« stattfinden kann.
+Gleichzeitig bietet sich über die chronologische Sortierung immer die Möglichkeit, zur »Ausgangssituation« zurück zu springen.</p>
+</div>
+<div id="archive-aus-klasse-sammeln" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Archive aus Klasse sammeln<a href="die-nim-app.html#archive-aus-klasse-sammeln" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sobald Ihre Schülerinnen und Schüler einige Spiele im Archiv gespeichert haben, können sie es exportieren und Ihnen per AirDrop schicken (siehe <a href="https://support.apple.com/de-de/HT204144" class="uri">https://support.apple.com/de-de/HT204144</a>).
+Sie selbst können dann bei den empfangenen Dateien jeweils ihr Archiv ergänzen, so dass Sie letztlich die Spiele von allen Kindern gesammelt haben.
+Damit können anschließend im Plenum (z. B. auf einem interaktiven Whiteboard) vielfältige Vergleiche vorgenommen und Strategien besprochen werden.</p>
+</div>
+<div id="spiele-zum-analysieren-vorgeben" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Spiele zum Analysieren vorgeben<a href="die-nim-app.html#spiele-zum-analysieren-vorgeben" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Auf dieselbe Weise können Sie Ihren Schülerinnen und Schülern auch einzelne Spiele schicken, so dass sie diese analysieren können.
+Dabei können Sie auf die Funktion zurückgreifen, nur Teile des Archivs zu versenden, wenn Sie den Auswahl-Button (drei Punkte im Kreis) vorher antippen.</p>
+</div>
+</div>
+<div id="globale-einstellungen" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Globale Einstellungen<a href="die-nim-app.html#globale-einstellungen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In den globalen App-Einstellungen (graue Zahnrad-App, anschließend nach unten scrollen bis zur Nim-App) können mehrere globale Einstellungen vorgenommen werden:</p>
+<ul>
+<li><p>Die <strong>Nummerierung der Felder</strong> kann angepasst werden: keine, jedes fünfte oder alle.</p></li>
+<li><p>Sie können die <strong>Änderung der Nummerierung aktivieren/deaktivieren</strong>. Dies kann in bestimmten Unterrichtssituationen hilfreich sein, wenn Sie eine bestimmte Art der Nummerierung bevorzugen, die nicht während des Spiels spontan geändert werden soll.</p></li>
+<li><p>Es kann der <strong>Einzel-Export</strong> von Spielen aktiviert/deaktiviert werden. Ein Deaktivieren führt dazu, dass im Archiv ein Button weniger sichtbar ist. Dies ist in manchen Unterrichtssituationen von Vorteil, damit die Schülerinnen und Schüler nicht aus Versehen darauf tippen.</p></li>
+<li><p>Sie können aktivieren/deaktivieren, dass beim Export des Archivs die <strong>Namen der Spieler/-innen anonymisiert</strong> werden. Normalerweise werden beim Untersuchen eines Spiels aus dem Archiv die eingegebenen Namen beider Personen dargestellt, die gespielt hatten. Ein Anonymisieren ist insbesondere dann sinnvoll, wenn Archive zwischen verschiedenen Geräten hin und her geschickt werden und nicht nachvollzogen werden soll, wer ein Spiel gespielt hat. In der pdf-Datei werden standardmäßig keine Namen dargestellt.</p></li>
+<li><p>Weiterhin kann die <strong>Sprache</strong> des Spiels angepasst werden. Folgende Sprachen werden derzeit unterstützt:</p>
+<ul>
+<li>Deutsch</li>
+<li>Englisch</li>
+<li>Französisch</li>
+<li>Spanisch</li>
+<li>Arabisch</li>
+<li>Isländisch</li>
+<li>Ukrainisch</li>
+<li>Russisch</li>
+<li>Kölsch</li>
+<li>Plattdeutsch</li>
+</ul>
+<p>Üblicherweise wird im Spiel die Systemsprache des Gerätes verwendet. Wenn diese nicht vom Spiel unterstützt wird (z. B. Spanisch), dann wird im Spiel automatisch Englisch verwendet. Je nach Zusammensetzung Ihrer Klasse können so einzelne Schülerinnen und Schüler ggf. flexibel ihr Spiel anpassen.</p>
+<p>Sollten Sie eine Sprache beherrschen, die derzeit nicht vom Spiel unterstützt wird, freuen wir uns über Ihre Unterstützung bei der Übersetzung, siehe dazu Abschnitt <a href="technischer-hintergrund-zur-app.html#uebersetzungen">B.3</a>.</p></li>
+</ul>
+</div>
+<div id="bedienungshilfen" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Bedienungshilfen<a href="die-nim-app.html#bedienungshilfen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Die App unterstützt einige der betriebssysteminternen Bedienungshilfen, die es Kindern mit besonderen Bedürfnissen ermöglichen, am Spielen teilhaben zu können.</p>
+<div id="farben-und-kontraste" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Farben und Kontraste<a href="die-nim-app.html#farben-und-kontraste" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Die Nim-App unterstützt die kontrastreichere Darstellung von Farben, wenn diese über die Bedienungshilfen aktiviert werden (siehe <a href="https://support.apple.com/de-de/HT207025" class="uri">https://support.apple.com/de-de/HT207025</a>).
+Über die entsprechenden Einstellungen können auch Farbfilter, bspw. bei Farbfehlsichtigkeiten, angepasst werden.</p>
+<p>Auch der Dunkelmodus (siehe <a href="https://support.apple.com/de-de/HT210332" class="uri">https://support.apple.com/de-de/HT210332</a>) wird von der Nim-App unterstützt.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FarbenHell"></span>
+<img src="pictures/Farben-hell.png" alt="Hellmodus mit normalem und hohem Kontrast" width="75%" />
+<p class="caption">
+Abb. 3.9: Hellmodus mit normalem und hohem Kontrast
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FarbenDunkel"></span>
+<img src="pictures/Farben-dunkel.png" alt="Dunkelmodus mit normalem und hohem Kontrast" width="75%" />
+<p class="caption">
+Abb. 3.10: Dunkelmodus mit normalem und hohem Kontrast
+</p>
+</div>
+</div>
+<div id="schriftgröße" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Schriftgröße<a href="die-nim-app.html#schriftgröße" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Weiterhin werden von der App dynamische Schriftgrößen unterstützt. Diese können entweder global eingestellt werden (siehe <a href="https://support.apple.com/de-de/HT202828" class="uri">https://support.apple.com/de-de/HT202828</a>) bzw., ab iOS 15, auch für einzelne Apps (siehe <a href="https://support.apple.com/de-de/guide/ipad/ipad723b5a33/15.0/ipados/15.0" class="uri">https://support.apple.com/de-de/guide/ipad/ipad723b5a33/15.0/ipados/15.0</a>). Mit dieser Option sollte jedoch behutsam umgegangen werden, da die Bildschirmdarstellung dadurch deutlich verschoben und zumindest ungewöhnlich aussehen kann.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Textgroesse"></span>
+<img src="pictures/Textgroesse.png" alt="Normale und größere Schriftgröße" width="75%" />
+<p class="caption">
+Abb. 3.11: Normale und größere Schriftgröße
+</p>
+</div>
+</div>
+<div id="texte-vorlesen" class="section level3 hasAnchor" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Texte vorlesen<a href="die-nim-app.html#texte-vorlesen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Die im System verankerte Funktion »VoiceOver« (siehe <a href="https://support.apple.com/de-lu/guide/ipad/ipad9a246898/ipados" class="uri">https://support.apple.com/de-lu/guide/ipad/ipad9a246898/ipados</a>) ermöglicht das Vorlesen einzelner Bildschirminhalte.
+Eine Bedienung bei eingeschalteter VoiceOver-Funktion ist nicht trivial und sollte daher nur dann genutzt werden, wenn (bspw. blinde oder sehbehinderte) Schülerinnen und Schüler darauf angewiesen sind.</p>
+<p>Innerhalb der Nim-App wurden in der deutschen und englischen Sprachversion für einige Bedienelemente spezifische Texte hinterlegt.
+Wird beispielsweise die Farbwahl geöffnet und ein farbiges Feld angetippt, so wird vom Gerät die entsprechende Farbe vorgelesen. Auch beim Antippen des Spielfeldes wird vorgelesen, um welches Feld (z. B. »Feld 3 von 10«) es sich gerade handelt.</p>
+<p>Die Realisierung dieser Unterstützung wurde jedoch bisher noch nicht mit Schülerinnen und Schülern erprobt, die auf das Vorlesen von Bildschirminhalten angewiesen sind.
+Sollten Sie über entsprechende Erfahrungen verfügen, freuen wir uns sehr über eine Rückmeldung.</p>
+
+</div>
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="didaktische-empfehlungen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hintergründe-zum-nim-spiel.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/heiko-etzold/nim-material/blob/de.1.1.1/3-Nim-App.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

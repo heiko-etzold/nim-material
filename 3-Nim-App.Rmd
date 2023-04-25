@@ -142,6 +142,7 @@ In den globalen App-Einstellungen (graue Zahnrad-App, anschließend nach unten s
   * Deutsch
   * Englisch
   * Französisch
+  * Spanisch
   * Arabisch
   * Isländisch
   * Ukrainisch

@@ -20,6 +20,13 @@ Handreichung zur Version 1.0: https://heiko-etzold.github.io/nim-material/de/1.0
 
 Handreichung zur Version 1.1: https://heiko-etzold.github.io/nim-material/de/1.1
 
+### Änderungen in Version 1.1.1 {-}
+
+* Spanisch als Sprachversionen hinzugefügt.
+
+Handreichung zur Version 1.1.1: https://heiko-etzold.github.io/nim-material/de/1.1.1
+
+
 
 ## Übersetzungen {#uebersetzungen}
 

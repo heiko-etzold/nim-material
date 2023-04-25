@@ -7,8 +7,8 @@ shortTitle <- "Nim-Handreichung"
 description <- "Anleitungen und Hinweise zur Nutzung der Nim-App"
 
 versionText <- "Version"
-guideVersion <- "1.1"
-appVersion <- "1.1"
+guideVersion <- "1.1.1"
+appVersion <- "1.1.1"
 optimizedTextA <- "; angepasst an Version "
 optimizedTextB <- " der Nim-App"
 
